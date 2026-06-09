@@ -72,36 +72,34 @@
 
 ## Traceability
 
-로드맵 생성 시 채워짐.
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | TBD | Pending |
-| INFRA-02 | TBD | Pending |
-| INFRA-03 | TBD | Pending |
-| INFRA-04 | TBD | Pending |
-| FOUND-01 | TBD | Pending |
-| FOUND-02 | TBD | Pending |
-| FOUND-03 | TBD | Pending |
-| FOUND-04 | TBD | Pending |
-| CORE-01 | TBD | Pending |
-| CORE-02 | TBD | Pending |
-| CORE-03 | TBD | Pending |
-| CORE-04 | TBD | Pending |
-| LEARN-01 | TBD | Pending |
-| LEARN-02 | TBD | Pending |
-| LEARN-03 | TBD | Pending |
-| LEARN-04 | TBD | Pending |
-| PLAT-01 | TBD | Pending |
-| PLAT-02 | TBD | Pending |
-| PLAT-03 | TBD | Pending |
-| REF-01 | TBD | Pending |
+| INFRA-01 | Phase 1 — Scaffold & CI | Pending |
+| INFRA-02 | Phase 1 — Scaffold & CI | Pending |
+| INFRA-03 | Phase 1 — Scaffold & CI | Pending |
+| INFRA-04 | Phase 1 — Scaffold & CI | Pending |
+| FOUND-01 | Phase 2 — Foundations | Pending |
+| FOUND-02 | Phase 2 — Foundations | Pending |
+| FOUND-03 | Phase 2 — Foundations | Pending |
+| FOUND-04 | Phase 2 — Foundations | Pending |
+| CORE-01 | Phase 3 — Core Concepts | Pending |
+| CORE-02 | Phase 3 — Core Concepts | Pending |
+| CORE-03 | Phase 3 — Core Concepts | Pending |
+| CORE-04 | Phase 3 — Core Concepts | Pending |
+| LEARN-01 | Phase 4 — Learning & Automation | Pending |
+| LEARN-02 | Phase 4 — Learning & Automation | Pending |
+| LEARN-03 | Phase 4 — Learning & Automation | Pending |
+| LEARN-04 | Phase 4 — Learning & Automation | Pending |
+| PLAT-01 | Phase 5 — Platforms & Operations | Pending |
+| PLAT-02 | Phase 5 — Platforms & Operations | Pending |
+| PLAT-03 | Phase 5 — Platforms & Operations | Pending |
+| REF-01 | Phase 6 — Reference | Pending |
 
 **Coverage:**
 - v1 requirements: 20 total
-- Mapped to phases: 0 (로드맵에서 매핑)
-- Unmapped: 20 ⚠️
+- Mapped to phases: 20
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-06-05*
-*Last updated: 2026-06-05 after initial definition*
+*Last updated: 2026-06-05 after roadmap creation — all 20 v1 requirements mapped*
