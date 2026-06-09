@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-06-05)
 
 **Core value:** 개발자가 따라 하면 Hermes Agent를 설치·실행하고, 스킬·게이트웨이·배포까지 실제로 동작시킬 수 있다. 모든 명령어·API는 공식 소스 근거 필수.
-**Current focus:** Phase 1 — Scaffold & CI
+**Current focus:** Phase 2 — Foundations (content chapters Ch.0–3)
 
 ## Current Position
 
-Phase: 1 of 6 (Scaffold & CI) — **COMPLETE**
-Plan: 3 of 3 in current phase — **ALL DONE**
-Status: Phase 1 complete
-Last activity: 2026-06-09 — Completed 01-03-PLAN.md (final verification + live deploy to GitHub Pages)
+Phase: 2 of 6 (Foundations) — **In progress**
+Plan: 1 of 4 in current phase — **DONE** (02-01 complete; 02-02/03/04 pending)
+Status: Phase 2 in progress
+Last activity: 2026-06-09 — Completed 02-01-PLAN.md (SUMMARY.md 4-챕터 스켈레톤 + Ch.0 소개 본문 + mdbook build)
 
-Progress: [███░░░░░░░] ~17% (3/~18 plans estimated)
+Progress: [████░░░░░░] ~22% (4/~18 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 2 min
-- Total execution time: ~2 min
+- Total plans completed: 4
+- Average duration: ~10 min
+- Total execution time: ~35 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-scaffold-ci | 3/3 (DONE) | ~33 min | ~11 min |
+| 02-foundations | 1/4 | ~2 min | ~2 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2 min), 01-02 (1 min), 01-03 (~30 min incl. human-action GitHub steps)
-- Trend: 01-03 was longer due to human-action checkpoint (GitHub account + live deploy verification)
+- Last 5 plans: 01-01 (2 min), 01-02 (1 min), 01-03 (~30 min incl. human-action), 02-01 (~2 min)
+- Trend: 02-01 was fast (content writing + build verify, no human-action needed)
 
 *Updated after each plan completion*
 
@@ -43,7 +44,10 @@ Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
 - Init: mdBook 0.5.3 + `actions/deploy-pages@v5` 공식 스타터 워크플로우 사용 (pre-built 바이너리, cargo install 금지)
-- Init: 한국어 UI (`display.language: ko`) 미지원 확인 — 영어 UI 사용 명시, 해당 내용 Ch.3에 포함
+- Init: 한국어 UI (`display.language: ko`) 초기 기록은 "미지원" — 02-01 RESEARCH.md에서 정정됨 (아래 참조)
+- 02-01: 한국어 UI **부분 지원** 정정 — `ko`는 지원 목록에 있으나 범위 협소(승인 프롬프트 등 정적 메시지만 번역; 에이전트 응답·로그·도구 출력은 영어 유지). Ch.3에서 정확히 설명할 것.
+- 02-01: SUMMARY.md Wave-1 단독 소유 패턴 확립 — 후속 Wave-2 플랜(02-02/03/04)이 src/SUMMARY.md를 건드리지 않아도 됨, 중복 경로 빌드 오류 방지
+- 02-01: mdBook 0.5.3 auto-placeholder 패턴 확인 — SUMMARY.md 링크 미작성 파일은 build 시 자동 생성됨 (exit 0)
 - Init: 코드블록 버전·검토일 주석 관례 (`# 검증: hermes vX.Y, YYYY-MM-DD`) Phase 1부터 적용
 - 01-01: mdBook 0.5.3 was already on PATH (pre-built binary); installation step skipped per plan's skip-if-present instruction
 - 01-01: `<owner>` placeholders left in git-repository-url/edit-url-template — plan 01-03 reconciles once remote exists
@@ -68,7 +72,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-09 (Plan 01-03 executed; book.toml reconciled cc2701b; live deploy verified — workflow run 27192158593 green; https://ohama.github.io/Hermes-Tutorial/ HTTP 200)
-Stopped at: Plan 01-03 complete — Phase 1 ALL 3/3 plans done; site live and auto-deploying
+Last session: 2026-06-09 (Plan 02-01 executed; SUMMARY.md 4-챕터 스켈레톤 667bbb3; Ch.0 소개 본문 02cc5e6; build exit 0 72f873d)
+Stopped at: Plan 02-01 complete — Phase 2 1/4 plans done; Wave-2 플랜(02-02/03/04) 병렬 실행 가능
 Resume file: None
-Next workflow trigger: `/gsd:plan-phase 2` (begin Phase 2 — first content chapters)
+Next workflow trigger: Wave-2 실행 — 02-02/02-03/02-04 (Ch.1 설치 / Ch.2 첫 실행 / Ch.3 모델 설정) 병렬 또는 순차 실행
