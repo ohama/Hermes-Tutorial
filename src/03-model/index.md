@@ -97,3 +97,78 @@ Hermes는 보안을 위해 비밀 정보와 일반 설정을 분리 저장합니
 # 검증: hermes rolling, 2026-06-09
 cat ~/.hermes/.env
 ```
+
+---
+
+## config.yaml 모델 섹션
+
+`~/.hermes/config.yaml`의 `model` 섹션으로 기본 공급자·모델·컨텍스트 길이·추론 수준을 설정합니다.
+
+```yaml
+# 검증: hermes rolling, 2026-06-09
+model:
+  default: nous/hermes-3-405b   # 또는 provider/model-id 형식
+  provider: nous                 # nous|openrouter|anthropic|openai|custom|auto
+  context_length: 131072
+  reasoning_effort: medium       # none|minimal|low|medium|high|xhigh
+```
+
+현재 설정 확인:
+
+```bash
+# 검증: hermes rolling, 2026-06-09
+hermes config show
+```
+
+---
+
+## 64K 최소 컨텍스트 요건
+
+Hermes Agent는 **최소 64,000 토큰**의 컨텍스트 윈도우를 가진 모델이 필요합니다.
+이보다 작은 모델은 시작 시 거부됩니다.
+
+**이유:** 매 API 호출마다 약 **13,935 토큰**의 고정 오버헤드가 소비됩니다.
+
+| 오버헤드 항목 | 토큰 수 |
+|--------------|---------|
+| 도구 정의 | ~8,759 |
+| 시스템 프롬프트 | ~5,176 |
+| **합계** | **~13,935** |
+
+64K 미만 모델은 실제 대화에 사용할 공간이 거의 없습니다.
+
+**권장 모델:** Claude, GPT, Gemini, Qwen, DeepSeek 등 대부분의 호스티드 모델은 이 요건을 쉽게 충족합니다.
+
+**Ollama 로컬 모델 사용 시:** 컨텍스트 크기를 명시적으로 지정해야 합니다.
+
+```bash
+# 검증: ollama (버전 로컬 확인 필요), 2026-06-09
+# 예시: 64K 컨텍스트로 실행 (정확한 플래그는 ollama --help로 확인 필요)
+ollama run llama3.2 --num-ctx 65536
+```
+
+> **검증 필요:** 정확한 플래그는 `ollama --help`로 확인하십시오
+> (`--context-size` 또는 `--num-ctx`). 일반적으로 통용되는 형태는 `--num-ctx`이나,
+> 로컬에서 실행하여 확인 후 사용하십시오.
+
+---
+
+## 한국어 UI (display.language: ko)
+
+Hermes는 한국어(`ko`)를 포함한 다양한 언어 UI를 **부분적으로** 지원합니다.
+
+**지원 언어 목록:** `en` | `zh` | `zh-hant` | `ja` | `de` | `es` | `fr` | `tr` | `uk` | `af` | `ko` | `it` | `ga` | `pt` | `ru` | `hu`
+
+설정 방법:
+
+```yaml
+# 검증: hermes rolling, 2026-06-09
+display:
+  language: ko    # 승인 프롬프트 등 일부 정적 메시지를 한국어로 번역
+                  # 에이전트 응답·로그·도구 출력은 영어 유지
+```
+
+> **참고:** 한국어(`ko`) 설정은 CLI 승인 프롬프트와 일부 게이트웨이 슬래시 커맨드 응답
+> 등 **소수의 정적 사용자 메시지만** 번역합니다. 에이전트의 실제 응답, 로그, 도구 출력,
+> 오류 메시지는 영어로 유지됩니다. 이것은 부분 한국어 지원입니다 — 완전한 한국어 UI가
+> 아닙니다.
