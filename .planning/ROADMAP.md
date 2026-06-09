@@ -67,7 +67,7 @@ Plans:
   2. Ch.5 컨텍스트 파일 챕터를 따라 `.hermes.md`/`AGENTS.md`/`SOUL.md` 계층과 `/personality` 슬래시 커맨드를 설정할 수 있다
   3. Ch.6 메모리 챕터를 따라 `MEMORY.md`/`USER.md`, SQLite FTS5 대화 검색, 압축 설정을 이해하고 활용할 수 있다
   4. Ch.7 툴 게이트웨이 챕터를 따라 `hermes tools`로 검색/이미지/TTS/브라우저 툴을 설정하고 승인 모드를 이해할 수 있다
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
 - [ ] 03-01: Ch.4 에이전트 루프 — AIAgent 코어, `run_agent.py` 흐름, 프롬프트 3티어 구조
