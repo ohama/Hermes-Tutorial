@@ -172,3 +172,54 @@ display:
 > 등 **소수의 정적 사용자 메시지만** 번역합니다. 에이전트의 실제 응답, 로그, 도구 출력,
 > 오류 메시지는 영어로 유지됩니다. 이것은 부분 한국어 지원입니다 — 완전한 한국어 UI가
 > 아닙니다.
+
+---
+
+## 흔한 오류 / 주의
+
+### 주의 1 — Claude Pro/Max 구독 ≠ API 접근 (CRITICAL)
+
+> **경고 (Anthropic Claude 공급자 선택 시):**
+> `claude.ai`의 Claude Pro 또는 Max **구독**은 Hermes와 같은 서드파티 도구의 API 접근을
+> **허용하지 않습니다**. Hermes에서 Claude를 사용하려면 `console.anthropic.com`에서
+> 별도 API 계정과 API 키(`sk-ant-...`)를 발급받아야 합니다.
+> 대안: OpenRouter를 통해 Claude 모델에 접근할 수도 있습니다.
+
+### 주의 2 — hermes setup Silent API Key Skip (CRITICAL, Issue #16394)
+
+> **주의:** `~/.hermes/.env`에 해당 공급자 키 항목이 이미 존재하면 (값이 잘못되어도)
+> `hermes setup`의 API 키 입력 프롬프트가 **조용히 건너뛰어집니다** (GitHub Issue #16394).
+> 녹색 체크마크가 표시되어도 실제로는 잘못된 키가 남아 있을 수 있습니다.
+>
+> 해결 방법:
+> - `~/.hermes/.env`를 직접 편집하여 해당 키 줄을 삭제한 후 `hermes setup` 재실행
+> - 또는 `hermes config set PROVIDER_API_KEY NEW_KEY`로 직접 덮어쓰기
+
+### 주의 3 — API 키를 config.yaml에 저장 금지
+
+> **경고:** API 키는 반드시 `~/.hermes/.env`에 저장해야 합니다.
+> `config.yaml`에 키를 직접 입력하면 git 추적 시 키가 노출될 위험이 있습니다.
+> `hermes model` 마법사나 `hermes auth add`를 사용하면 자동으로 `.env`에 저장됩니다.
+
+### 주의 4 — 64K 미만 모델 선택 시
+
+> **주의:** 컨텍스트 윈도우가 64,000 토큰 미만인 모델은 Hermes가 시작 시 거부합니다.
+> 무료 또는 소형 모델 선택 시 공급자의 모델 사양에서 context window를 확인하십시오.
+> 고정 오버헤드(약 13,935 토큰)가 매 API 호출마다 소비됩니다.
+
+### 주의 5 — /model과 hermes model의 차이
+
+> **참고:** 채팅 세션 내 `/model` 명령은 **이미 설정된 공급자 간 전환만** 가능합니다.
+> 새 공급자를 추가하려면 세션을 종료(`Ctrl+D`)하고 터미널에서 `hermes model`을 실행하십시오.
+
+---
+
+## 다음 단계
+
+이 챕터에서 공급자를 연결하고 API 키를 설정했습니다.
+[Ch.2 첫 실행](../02-first-run/index.md)으로 돌아가 첫 대화를 완료하거나,
+이미 완료했다면 다음 단계로 넘어가십시오.
+
+이제 Hermes를 설치·실행·연결했습니다. 다음 단계에서는 컨텍스트 관리, 메모리, 도구 활용,
+게이트웨이(Telegram, Discord, Slack 등), 그리고 서버 배포를 다룹니다. 각 주제는 이후
+챕터에서 순서대로 안내합니다.
