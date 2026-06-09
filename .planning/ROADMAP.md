@@ -30,12 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. `git push`를 하면 GitHub Actions 워크플로우가 트리거되어 GitHub Pages에 자동 배포된다
   3. 배포된 사이트가 `https://<owner>.github.io/<repo>/`에서 한국어 SUMMARY.md 기반 목차와 함께 정상 접근된다
   4. 모든 코드블록에 버전·검토일 주석 관례(`# 검증: hermes vX.Y, YYYY-MM-DD`)가 적용된 예시 챕터가 존재한다
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: mdBook 프로젝트 초기화 — `book.toml` (`language = "ko"`, `site-url`), `src/SUMMARY.md` 19챕터 스텁, 디렉터리 구조
-- [ ] 01-02: GitHub Actions 배포 워크플로우 — pre-built mdBook 0.5.3 바이너리 설치, `actions/deploy-pages@v5`, Pages 권한 설정
-- [ ] 01-03: 코드블록 관례 및 첫 커밋 검증 — 버전·검토일 주석 예시, 빌드 및 배포 실 검증
+- [ ] 01-01-PLAN.md — mdBook 0.5.3 스캐폴드: book.toml(`language="ko"`, site-url), 한국어 SUMMARY.md, `# 검증:` 주석 예시 챕터, 로컬 빌드 검증
+- [ ] 01-02-PLAN.md — GitHub Actions 워크플로우: pre-built mdBook 0.5.3 바이너리, configure/upload/deploy-pages 흐름, Pages 권한
+- [ ] 01-03-PLAN.md — 최종 검증 + 배포: 로컬 빌드 재확인(자동) + GitHub 리모트·Pages 소스·푸시·라이브 사이트 확인(수동 체크포인트)
 
 ---
 
