@@ -9,26 +9,26 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 
 ## Current Position
 
-Phase: 2 of 6 (Foundations) — **In progress**
-Plan: 3 of 4 in current phase — **02-02+02-03 DONE** (02-01/02-02/02-03 complete; 02-04 pending)
-Status: Phase 2 in progress
-Last activity: 2026-06-09 — Completed 02-02-PLAN.md (Ch.1 설치 본문 + PATH 재로드 + hermes doctor placeholder + 4 주의 callout + mdbook build) + 02-03-PLAN.md (Ch.2 첫 실행 본문)
+Phase: 2 of 6 (Foundations) — **Phase 2 COMPLETE**
+Plan: 4 of 4 in current phase — **ALL DONE** (02-01/02-02/02-03/02-04 complete)
+Status: Phase 2 complete — Ch.0~3 all written; mdbook build passing
+Last activity: 2026-06-09 — Completed 02-04-PLAN.md (Ch.3 모델 설정 — hermes model 마법사 + 공급자 표 + API 키 저장 분리 + config.yaml 모델 섹션 + 64K 요건 + ko 부분 지원 + 5개 주의 callout + mdbook build exit 0)
 
-Progress: [██████░░░░] ~39% (7/~18 plans estimated)
+Progress: [████████░░] ~44% (8/~18 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
+- Total plans completed: 8
 - Average duration: ~5 min
-- Total execution time: ~37 min
+- Total execution time: ~39 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-scaffold-ci | 3/3 (DONE) | ~33 min | ~11 min |
-| 02-foundations | 3/4 | ~4 min | ~2 min |
+| 02-foundations | 4/4 (DONE) | ~6 min | ~2 min |
 
 **Recent Trend:**
 - Last 5 plans: 01-01 (2 min), 01-02 (1 min), 01-03 (~30 min incl. human-action), 02-01 (~2 min), 02-02 (~2 min), 02-03 (~2 min)
@@ -61,6 +61,11 @@ Recent decisions affecting current work:
 - 02-02: hermes doctor 출력 LOW confidence → placeholder + 검증 필요 callout; 발명 금지 패턴 확립
 - 02-02: hermes version 예시(0.8.0) MEDIUM confidence → "예시" 명시, 현재 버전으로 단정하지 않음
 - 02-02: Tasks 1+2를 단일 파일 작성으로 처리 — 동일 파일 순차 편집이므로 완전한 파일 한 번에 작성 + atomic commit
+- 02-04: OpenAI env var `OPENAI_API_KEY` MEDIUM confidence — 표에 불확실성 표기, 마법사로 확인 권장
+- 02-04: Ollama 컨텍스트 플래그 `--num-ctx` LOW confidence — 검증 필요 callout로 처리
+- 02-04: Nous Portal 가격 LOW confidence — 공식 요금 페이지 확인 권장으로만 언급, 단정 없음
+- 02-04: display.language ko = 부분 지원 확정 기술 (정정 반영); '미지원' 표현 완전 제거
+- 02-04: Phase 3+ 다음 단계 = 평문 산문만 (Pitfall B-11 준수; 존재하지 않는 파일 링크 없음)
 
 ### Pending Todos
 
@@ -75,7 +80,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-09 (Plans 02-02 + 02-03 executed in Wave-2; Ch.1 설치 e229cfd; Ch.2 첫 실행 75dbd86; build exit 0 confirmed both)
-Stopped at: Plans 02-02+02-03 complete — Phase 2 3/4 plans done; 02-04 (Ch.3 모델 설정) pending
+Last session: 2026-06-09 (Plan 02-04 executed; Ch.3 모델 설정 완성; build exit 0; Phase 2 ALL DONE)
+Stopped at: Plan 02-04 complete — Phase 2 complete (4/4 plans done); Ch.0~3 all written; mdbook build passing
 Resume file: None
-Next workflow trigger: 02-04 실행 — Ch.3 모델 설정 본문 작성 (src/03-model/index.md)
+Next workflow trigger: `/gsd:plan-phase 03` — Phase 3 (컨텍스트·메모리) 또는 `/gsd:complete-phase 02` to archive Phase 2
