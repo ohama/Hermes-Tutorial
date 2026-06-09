@@ -46,15 +46,15 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. Ch.0 소개 챕터가 렌더링되고 Hermes의 핵심 철학(학습 루프, 자가 개선)과 튜토리얼 사용법이 설명된다
   2. Ch.1 설치 챕터를 따라 macOS/Linux/WSL2/Windows에서 Hermes를 설치하고 `hermes doctor`로 검증할 수 있다 (PATH 재로드 단계 포함)
-  3. Ch.2 첫 실행 챕터를 따라 `hermes`를 실행해 첫 대화를 완료하고 주요 CLI 명령어(`hermes help` 등)를 확인할 수 있다
+  3. Ch.2 첫 실행 챕터를 따라 `hermes`를 실행해 첫 대화를 완료하고 주요 CLI 명령어(`hermes --help` 등)를 확인할 수 있다
   4. Ch.3 모델 설정 챕터를 따라 `hermes model`로 제공자와 API 키를 설정하고 64K 최소 컨텍스트 요건을 충족하는 모델을 선택할 수 있다
-**Plans**: TBD
+**Plans**: 4 plans (2 waves — 02-01이 SUMMARY.md 스켈레톤 확정[Wave 1], 02-02/03/04 챕터 본문 병렬[Wave 2])
 
 Plans:
-- [ ] 02-01: Ch.0 소개 — Hermes란 무엇인가, 학습 루프 철학, 이 튜토리얼 사용 방법
-- [ ] 02-02: Ch.1 설치 — OS별 설치(macOS/Linux/WSL2/Windows), PATH 재로드, `hermes doctor` 검증, sudo 경고
-- [ ] 02-03: Ch.2 첫 실행 — `hermes` 실행, TUI/CLI 탐색, 주요 명령어 파악, 예상 출력 블록
-- [ ] 02-04: Ch.3 모델 설정 — `hermes model`, OpenRouter/Nous Portal/OpenAI, 64K 요건, Claude 구독 vs API 접근 경고
+- [ ] 02-01-PLAN.md — Ch.0 소개 + SUMMARY.md 4-챕터 스켈레톤 (학습 루프·멀티모델 철학, 튜토리얼 맵)
+- [ ] 02-02-PLAN.md — Ch.1 설치 (OS별 curl|bash/ps1, PATH 재로드, hermes doctor, sudo/Windows/Termux 주의)
+- [ ] 02-03-PLAN.md — Ch.2 첫 실행 (hermes/--tui 실행, 첫 대화, CLI 명령어 일람[hermes --help], 슬래시 커맨드, 출력 placeholder)
+- [ ] 02-04-PLAN.md — Ch.3 모델 설정 (hermes model/setup --portal, 공급자·키 .env, 64K 요건, ko 부분 지원, 5개 주의)
 
 ---
 
