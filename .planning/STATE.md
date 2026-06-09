@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 2 of 6 (Foundations) — **In progress**
-Plan: 1 of 4 in current phase — **DONE** (02-01 complete; 02-02/03/04 pending)
+Plan: 3 of 4 in current phase — **02-03 DONE** (02-01/02/03 complete; 02-04 pending)
 Status: Phase 2 in progress
-Last activity: 2026-06-09 — Completed 02-01-PLAN.md (SUMMARY.md 4-챕터 스켈레톤 + Ch.0 소개 본문 + mdbook build)
+Last activity: 2026-06-09 — Completed 02-03-PLAN.md (Ch.2 첫 실행 본문 + mdbook build)
 
-Progress: [████░░░░░░] ~22% (4/~18 plans estimated)
+Progress: [█████░░░░░] ~33% (6/~18 plans estimated)
 
 ## Performance Metrics
 
@@ -28,11 +28,11 @@ Progress: [████░░░░░░] ~22% (4/~18 plans estimated)
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-scaffold-ci | 3/3 (DONE) | ~33 min | ~11 min |
-| 02-foundations | 1/4 | ~2 min | ~2 min |
+| 02-foundations | 3/4 | ~6 min | ~2 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2 min), 01-02 (1 min), 01-03 (~30 min incl. human-action), 02-01 (~2 min)
-- Trend: 02-01 was fast (content writing + build verify, no human-action needed)
+- Last 5 plans: 01-01 (2 min), 01-02 (1 min), 01-03 (~30 min incl. human-action), 02-01 (~2 min), 02-02 (~2 min), 02-03 (~2 min)
+- Trend: Wave-2 plans (02-02/03) very fast — pure content writing from RESEARCH, no human-action needed
 
 *Updated after each plan completion*
 
@@ -72,7 +72,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-09 (Plan 02-01 executed; SUMMARY.md 4-챕터 스켈레톤 667bbb3; Ch.0 소개 본문 02cc5e6; build exit 0 72f873d)
-Stopped at: Plan 02-01 complete — Phase 2 1/4 plans done; Wave-2 플랜(02-02/03/04) 병렬 실행 가능
+Last session: 2026-06-09 (Plan 02-03 executed; Ch.2 첫 실행 본문 75dbd86; build exit 0 confirmed)
+Stopped at: Plan 02-03 complete — Phase 2 3/4 plans done; 02-04 (Ch.3 모델 설정) pending
 Resume file: None
-Next workflow trigger: Wave-2 실행 — 02-02/02-03/02-04 (Ch.1 설치 / Ch.2 첫 실행 / Ch.3 모델 설정) 병렬 또는 순차 실행
+Next workflow trigger: 02-04 실행 — Ch.3 모델 설정 본문 작성 (src/03-model/index.md)
