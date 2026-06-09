@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 1 of 6 (Scaffold & CI)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-06-05 — Roadmap and STATE created by roadmapper
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-06-09 — Completed 01-01-PLAN.md (mdBook scaffold + # 검증: convention)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] ~6% (1/~18 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 2 min
+- Total execution time: ~2 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-scaffold-ci | 1/3 | ~2 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: —
+- Last 5 plans: 01-01 (2 min)
 - Trend: —
 
 *Updated after each plan completion*
@@ -45,6 +45,9 @@ Recent decisions affecting current work:
 - Init: mdBook 0.5.3 + `actions/deploy-pages@v5` 공식 스타터 워크플로우 사용 (pre-built 바이너리, cargo install 금지)
 - Init: 한국어 UI (`display.language: ko`) 미지원 확인 — 영어 UI 사용 명시, 해당 내용 Ch.3에 포함
 - Init: 코드블록 버전·검토일 주석 관례 (`# 검증: hermes vX.Y, YYYY-MM-DD`) Phase 1부터 적용
+- 01-01: mdBook 0.5.3 was already on PATH (pre-built binary); installation step skipped per plan's skip-if-present instruction
+- 01-01: `<owner>` placeholders left in git-repository-url/edit-url-template — plan 01-03 reconciles once remote exists
+- 01-01: book.toml must NOT include multilingual/curly-quotes/copy-fonts/google-analytics/smart-punctuation/hash-files (removed in 0.5.0, cause hard errors)
 
 ### Pending Todos
 
@@ -58,6 +61,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-05
-Stopped at: ROADMAP.md + STATE.md 초기 생성 완료, REQUIREMENTS.md traceability 업데이트 완료
+Last session: 2026-06-09 (Plan 01-01 executed by gsd-executor agent; mdbook build verified at 07:48:47Z)
+Stopped at: Plan 01-01 complete — 1/3 plans in Phase 1 done; scaffold builds with no errors
 Resume file: None
+Next workflow trigger: Execute 01-02-PLAN.md (GitHub Actions CI/CD pipeline)
