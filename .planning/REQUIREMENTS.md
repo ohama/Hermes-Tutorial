@@ -16,10 +16,10 @@
 
 ### Foundations (기초)
 
-- [ ] **FOUND-01**: 독자는 Hermes가 무엇이며 학습 루프 철학과 이 튜토리얼 사용법을 이해한다
-- [ ] **FOUND-02**: 독자는 OS별(macOS/Linux/WSL2/Windows)로 Hermes를 설치할 수 있다(git 전제조건, PATH 갱신 함정 포함)
-- [ ] **FOUND-03**: 독자는 `hermes`를 실행해 첫 대화를 하고 주요 명령어를 파악한다
-- [ ] **FOUND-04**: 독자는 `hermes model`로 모델 제공자(OpenRouter/Nous Portal/OpenAI 등)와 API 키를 설정한다(64K 최소 컨텍스트·키 무음 스킵 주의)
+- [x] **FOUND-01**: 독자는 Hermes가 무엇이며 학습 루프 철학과 이 튜토리얼 사용법을 이해한다
+- [x] **FOUND-02**: 독자는 OS별(macOS/Linux/WSL2/Windows)로 Hermes를 설치할 수 있다(git 전제조건, PATH 갱신 함정 포함)
+- [x] **FOUND-03**: 독자는 `hermes`를 실행해 첫 대화를 하고 주요 명령어를 파악한다
+- [x] **FOUND-04**: 독자는 `hermes model`로 모델 제공자(OpenRouter/Nous Portal/OpenAI 등)와 API 키를 설정한다(64K 최소 컨텍스트·키 무음 스킵 주의)
 
 ### Core Concepts (핵심 개념)
 
@@ -78,10 +78,10 @@
 | INFRA-02 | Phase 1 — Scaffold & CI | Complete |
 | INFRA-03 | Phase 1 — Scaffold & CI | Complete |
 | INFRA-04 | Phase 1 — Scaffold & CI | Complete |
-| FOUND-01 | Phase 2 — Foundations | Pending |
-| FOUND-02 | Phase 2 — Foundations | Pending |
-| FOUND-03 | Phase 2 — Foundations | Pending |
-| FOUND-04 | Phase 2 — Foundations | Pending |
+| FOUND-01 | Phase 2 — Foundations | Complete |
+| FOUND-02 | Phase 2 — Foundations | Complete |
+| FOUND-03 | Phase 2 — Foundations | Complete |
+| FOUND-04 | Phase 2 — Foundations | Complete |
 | CORE-01 | Phase 3 — Core Concepts | Pending |
 | CORE-02 | Phase 3 — Core Concepts | Pending |
 | CORE-03 | Phase 3 — Core Concepts | Pending |

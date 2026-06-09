@@ -13,7 +13,7 @@
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Scaffold & CI** - mdBook 프로젝트 구조와 GitHub Pages 자동 배포 파이프라인 구축
-- [ ] **Phase 2: Foundations** - 소개·설치·첫 실행·모델 설정 챕터 (Ch.0–3)
+- [x] **Phase 2: Foundations** - 소개·설치·첫 실행·모델 설정 챕터 (Ch.0–3)
 - [ ] **Phase 3: Core Concepts** - 에이전트 루프·컨텍스트·메모리·툴 게이트웨이 챕터 (Ch.4–8)
 - [ ] **Phase 4: Learning & Automation** - 스킬·학습 루프·MCP·크론·서브에이전트 챕터 (Ch.9–13)
 - [ ] **Phase 5: Platforms & Operations** - 메시징 게이트웨이·배포·보안 챕터 (Ch.14–18)
@@ -51,10 +51,10 @@ Plans:
 **Plans**: 4 plans (2 waves — 02-01이 SUMMARY.md 스켈레톤 확정[Wave 1], 02-02/03/04 챕터 본문 병렬[Wave 2])
 
 Plans:
-- [ ] 02-01-PLAN.md — Ch.0 소개 + SUMMARY.md 4-챕터 스켈레톤 (학습 루프·멀티모델 철학, 튜토리얼 맵)
-- [ ] 02-02-PLAN.md — Ch.1 설치 (OS별 curl|bash/ps1, PATH 재로드, hermes doctor, sudo/Windows/Termux 주의)
-- [ ] 02-03-PLAN.md — Ch.2 첫 실행 (hermes/--tui 실행, 첫 대화, CLI 명령어 일람[hermes --help], 슬래시 커맨드, 출력 placeholder)
-- [ ] 02-04-PLAN.md — Ch.3 모델 설정 (hermes model/setup --portal, 공급자·키 .env, 64K 요건, ko 부분 지원, 5개 주의)
+- [x] 02-01-PLAN.md — Ch.0 소개 + SUMMARY.md 4-챕터 스켈레톤 (학습 루프·멀티모델 철학, 튜토리얼 맵)
+- [x] 02-02-PLAN.md — Ch.1 설치 (OS별 curl|bash/ps1, PATH 재로드, hermes doctor, sudo/Windows/Termux 주의)
+- [x] 02-03-PLAN.md — Ch.2 첫 실행 (hermes/--tui 실행, 첫 대화, CLI 명령어 일람[hermes --help], 슬래시 커맨드, 출력 placeholder)
+- [x] 02-04-PLAN.md — Ch.3 모델 설정 (hermes model/setup --portal, 공급자·키 .env, 64K 요건, ko 부분 지원, 5개 주의)
 
 ---
 
@@ -143,7 +143,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Scaffold & CI | 3/3 | ✓ Complete | 2026-06-09 |
-| 2. Foundations | 0/4 | Not started | - |
+| 2. Foundations | 4/4 | ✓ Complete | 2026-06-09 |
 | 3. Core Concepts | 0/5 | Not started | - |
 | 4. Learning & Automation | 0/5 | Not started | - |
 | 5. Platforms & Operations | 0/4 | Not started | - |
@@ -151,4 +151,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 ---
 *Roadmap created: 2026-06-05*
-*Last updated: 2026-06-09 after Phase 1 completion (live at https://ohama.github.io/Hermes-Tutorial/)*
+*Last updated: 2026-06-09 after Phase 2 completion (Ch.0–3 live at https://ohama.github.io/Hermes-Tutorial/)*
