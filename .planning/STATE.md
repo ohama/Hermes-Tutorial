@@ -10,25 +10,25 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 2 of 6 (Foundations) — **In progress**
-Plan: 3 of 4 in current phase — **02-03 DONE** (02-01/02/03 complete; 02-04 pending)
+Plan: 3 of 4 in current phase — **02-02+02-03 DONE** (02-01/02-02/02-03 complete; 02-04 pending)
 Status: Phase 2 in progress
-Last activity: 2026-06-09 — Completed 02-03-PLAN.md (Ch.2 첫 실행 본문 + mdbook build)
+Last activity: 2026-06-09 — Completed 02-02-PLAN.md (Ch.1 설치 본문 + PATH 재로드 + hermes doctor placeholder + 4 주의 callout + mdbook build) + 02-03-PLAN.md (Ch.2 첫 실행 본문)
 
-Progress: [█████░░░░░] ~33% (6/~18 plans estimated)
+Progress: [██████░░░░] ~39% (7/~18 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: ~10 min
-- Total execution time: ~35 min
+- Total plans completed: 7
+- Average duration: ~5 min
+- Total execution time: ~37 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-scaffold-ci | 3/3 (DONE) | ~33 min | ~11 min |
-| 02-foundations | 3/4 | ~6 min | ~2 min |
+| 02-foundations | 3/4 | ~4 min | ~2 min |
 
 **Recent Trend:**
 - Last 5 plans: 01-01 (2 min), 01-02 (1 min), 01-03 (~30 min incl. human-action), 02-01 (~2 min), 02-02 (~2 min), 02-03 (~2 min)
@@ -58,6 +58,9 @@ Recent decisions affecting current work:
 - 01-03: book.toml site-url="/Hermes-Tutorial/", git-repository-url/edit-url-template reconciled to ohama/Hermes-Tutorial (commit cc2701b)
 - 01-03: GitHub Pages source must be enabled (build_type=workflow via gh api) BEFORE first push — ordering non-negotiable (Pitfall 3)
 - 01-03: Workflow run 27192158593 green (build 7s + deploy 10s); live site HTTP 200, Korean TOC renders
+- 02-02: hermes doctor 출력 LOW confidence → placeholder + 검증 필요 callout; 발명 금지 패턴 확립
+- 02-02: hermes version 예시(0.8.0) MEDIUM confidence → "예시" 명시, 현재 버전으로 단정하지 않음
+- 02-02: Tasks 1+2를 단일 파일 작성으로 처리 — 동일 파일 순차 편집이므로 완전한 파일 한 번에 작성 + atomic commit
 
 ### Pending Todos
 
@@ -72,7 +75,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-09 (Plan 02-03 executed; Ch.2 첫 실행 본문 75dbd86; build exit 0 confirmed)
-Stopped at: Plan 02-03 complete — Phase 2 3/4 plans done; 02-04 (Ch.3 모델 설정) pending
+Last session: 2026-06-09 (Plans 02-02 + 02-03 executed in Wave-2; Ch.1 설치 e229cfd; Ch.2 첫 실행 75dbd86; build exit 0 confirmed both)
+Stopped at: Plans 02-02+02-03 complete — Phase 2 3/4 plans done; 02-04 (Ch.3 모델 설정) pending
 Resume file: None
 Next workflow trigger: 02-04 실행 — Ch.3 모델 설정 본문 작성 (src/03-model/index.md)
