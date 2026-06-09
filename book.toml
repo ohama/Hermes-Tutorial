@@ -1,0 +1,17 @@
+[book]
+title = "Hermes Agent 한국어 튜토리얼"
+authors = ["Hermes Tutorial Contributors"]
+description = "Nous Research Hermes Agent 한국어 튜토리얼"
+language = "ko"
+src = "src"
+
+[output.html]
+site-url = "/hermes-tutorial/"
+git-repository-url = "https://github.com/<owner>/hermes-tutorial"
+edit-url-template = "https://github.com/<owner>/hermes-tutorial/edit/main/{path}"
+default-theme = "light"
+preferred-dark-theme = "navy"
+
+[output.html.search]
+enable = true
+limit-results = 20
