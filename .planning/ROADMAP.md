@@ -12,7 +12,7 @@
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Scaffold & CI** - mdBook 프로젝트 구조와 GitHub Pages 자동 배포 파이프라인 구축
+- [x] **Phase 1: Scaffold & CI** - mdBook 프로젝트 구조와 GitHub Pages 자동 배포 파이프라인 구축
 - [ ] **Phase 2: Foundations** - 소개·설치·첫 실행·모델 설정 챕터 (Ch.0–3)
 - [ ] **Phase 3: Core Concepts** - 에이전트 루프·컨텍스트·메모리·툴 게이트웨이 챕터 (Ch.4–8)
 - [ ] **Phase 4: Learning & Automation** - 스킬·학습 루프·MCP·크론·서브에이전트 챕터 (Ch.9–13)
@@ -33,9 +33,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — mdBook 0.5.3 스캐폴드: book.toml(`language="ko"`, site-url), 한국어 SUMMARY.md, `# 검증:` 주석 예시 챕터, 로컬 빌드 검증
-- [ ] 01-02-PLAN.md — GitHub Actions 워크플로우: pre-built mdBook 0.5.3 바이너리, configure/upload/deploy-pages 흐름, Pages 권한
-- [ ] 01-03-PLAN.md — 최종 검증 + 배포: 로컬 빌드 재확인(자동) + GitHub 리모트·Pages 소스·푸시·라이브 사이트 확인(수동 체크포인트)
+- [x] 01-01-PLAN.md — mdBook 0.5.3 스캐폴드: book.toml(`language="ko"`, site-url), 한국어 SUMMARY.md, `# 검증:` 주석 예시 챕터, 로컬 빌드 검증
+- [x] 01-02-PLAN.md — GitHub Actions 워크플로우: pre-built mdBook 0.5.3 바이너리, configure/upload/deploy-pages 흐름, Pages 권한
+- [x] 01-03-PLAN.md — 최종 검증 + 배포: 로컬 빌드 재확인(자동) + GitHub 리모트·Pages 소스·푸시·라이브 사이트 확인(수동 체크포인트) → https://ohama.github.io/Hermes-Tutorial/
 
 ---
 
@@ -142,7 +142,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scaffold & CI | 0/3 | Not started | - |
+| 1. Scaffold & CI | 3/3 | ✓ Complete | 2026-06-09 |
 | 2. Foundations | 0/4 | Not started | - |
 | 3. Core Concepts | 0/5 | Not started | - |
 | 4. Learning & Automation | 0/5 | Not started | - |
@@ -151,4 +151,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 ---
 *Roadmap created: 2026-06-05*
-*Last updated: 2026-06-05 after initial creation*
+*Last updated: 2026-06-09 after Phase 1 completion (live at https://ohama.github.io/Hermes-Tutorial/)*

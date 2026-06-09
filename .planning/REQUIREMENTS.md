@@ -9,10 +9,10 @@
 
 ### Infrastructure (인프라·결과물 토대)
 
-- [ ] **INFRA-01**: mdBook 0.5.3 프로젝트 구조(`book.toml`, `src/`, `SUMMARY.md`)가 빌드 가능하게 구성된다
-- [ ] **INFRA-02**: `book.toml`에 `language = "ko"`와 GitHub Pages용 `site-url = "/<repo>/"`가 설정된다
-- [ ] **INFRA-03**: GitHub Actions로 mdBook을 빌드하고 `actions/deploy-pages@v5`로 GitHub Pages에 자동 배포한다
-- [ ] **INFRA-04**: 모든 코드블록은 버전·검토일 주석 관례를 따른다(정확성 추적)
+- [x] **INFRA-01**: mdBook 0.5.3 프로젝트 구조(`book.toml`, `src/`, `SUMMARY.md`)가 빌드 가능하게 구성된다
+- [x] **INFRA-02**: `book.toml`에 `language = "ko"`와 GitHub Pages용 `site-url = "/<repo>/"`가 설정된다
+- [x] **INFRA-03**: GitHub Actions로 mdBook을 빌드하고 `actions/deploy-pages@v5`로 GitHub Pages에 자동 배포한다
+- [x] **INFRA-04**: 모든 코드블록은 버전·검토일 주석 관례를 따른다(정확성 추적)
 
 ### Foundations (기초)
 
@@ -74,10 +74,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | Phase 1 — Scaffold & CI | Pending |
-| INFRA-02 | Phase 1 — Scaffold & CI | Pending |
-| INFRA-03 | Phase 1 — Scaffold & CI | Pending |
-| INFRA-04 | Phase 1 — Scaffold & CI | Pending |
+| INFRA-01 | Phase 1 — Scaffold & CI | Complete |
+| INFRA-02 | Phase 1 — Scaffold & CI | Complete |
+| INFRA-03 | Phase 1 — Scaffold & CI | Complete |
+| INFRA-04 | Phase 1 — Scaffold & CI | Complete |
 | FOUND-01 | Phase 2 — Foundations | Pending |
 | FOUND-02 | Phase 2 — Foundations | Pending |
 | FOUND-03 | Phase 2 — Foundations | Pending |
