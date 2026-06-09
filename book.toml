@@ -6,9 +6,9 @@ language = "ko"
 src = "src"
 
 [output.html]
-site-url = "/hermes-tutorial/"
-git-repository-url = "https://github.com/<owner>/hermes-tutorial"
-edit-url-template = "https://github.com/<owner>/hermes-tutorial/edit/main/{path}"
+site-url = "/Hermes-Tutorial/"
+git-repository-url = "https://github.com/ohama/Hermes-Tutorial"
+edit-url-template = "https://github.com/ohama/Hermes-Tutorial/edit/main/{path}"
 default-theme = "light"
 preferred-dark-theme = "navy"
 
