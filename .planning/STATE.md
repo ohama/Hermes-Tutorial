@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 1 of 6 (Scaffold & CI)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-06-09 — Completed 01-01-PLAN.md (mdBook scaffold + # 검증: convention)
+Last activity: 2026-06-09 — Completed 01-02-PLAN.md (GitHub Actions deploy.yml CI/CD pipeline)
 
-Progress: [█░░░░░░░░░] ~6% (1/~18 plans estimated)
+Progress: [██░░░░░░░░] ~11% (2/~18 plans estimated)
 
 ## Performance Metrics
 
@@ -27,11 +27,11 @@ Progress: [█░░░░░░░░░] ~6% (1/~18 plans estimated)
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-scaffold-ci | 1/3 | ~2 min | 2 min |
+| 01-scaffold-ci | 2/3 | ~3 min | 1.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2 min)
-- Trend: —
+- Last 5 plans: 01-01 (2 min), 01-02 (1 min)
+- Trend: fast (no external deps, pure file write + validation)
 
 *Updated after each plan completion*
 
@@ -48,6 +48,8 @@ Recent decisions affecting current work:
 - 01-01: mdBook 0.5.3 was already on PATH (pre-built binary); installation step skipped per plan's skip-if-present instruction
 - 01-01: `<owner>` placeholders left in git-repository-url/edit-url-template — plan 01-03 reconciles once remote exists
 - 01-01: book.toml must NOT include multilingual/curly-quotes/copy-fonts/google-analytics/smart-punctuation/hash-files (removed in 0.5.0, cause hard errors)
+- 01-02: deploy.yml uses pre-built binary install (not cargo install); pins deploy-pages@v5; permissions pages:write + id-token:write required by deploy-pages
+- 01-02: YAML validation via PyYAML (python3 yaml.safe_load) — confirmed available on system
 
 ### Pending Todos
 
@@ -61,7 +63,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-09 (Plan 01-01 executed by gsd-executor agent; mdbook build verified at 07:48:47Z)
-Stopped at: Plan 01-01 complete — 1/3 plans in Phase 1 done; scaffold builds with no errors
+Last session: 2026-06-09 (Plan 01-02 executed by gsd-executor agent; deploy.yml written + YAML validated at 07:51:20Z)
+Stopped at: Plan 01-02 complete — 2/3 plans in Phase 1 done; deploy.yml committed at 658d01c
 Resume file: None
-Next workflow trigger: Execute 01-02-PLAN.md (GitHub Actions CI/CD pipeline)
+Next workflow trigger: Execute 01-03-PLAN.md (push to GitHub remote + enable GitHub Pages)
