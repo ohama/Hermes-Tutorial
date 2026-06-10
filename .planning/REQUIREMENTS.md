@@ -23,10 +23,10 @@
 
 ### Core Concepts (핵심 개념)
 
-- [ ] **CORE-01**: 독자는 AIAgent 코어 루프 동작 원리와 프롬프트 시스템을 이해한다
-- [ ] **CORE-02**: 독자는 컨텍스트 파일 계층(`.hermes.md`/`AGENTS.md`/`SOUL.md`)과 퍼스널리티(`/personality`)를 설정한다
-- [ ] **CORE-03**: 독자는 메모리 시스템(`MEMORY.md`/`USER.md`, SQLite FTS5 대화 검색, 압축)을 이해하고 활용한다
-- [ ] **CORE-04**: 독자는 내장 툴과 툴 게이트웨이(`hermes tools`, 검색/이미지/TTS/브라우저)를 설정하고 승인 모드를 이해한다
+- [x] **CORE-01**: 독자는 AIAgent 코어 루프 동작 원리와 프롬프트 시스템을 이해한다
+- [x] **CORE-02**: 독자는 컨텍스트 파일 계층(`.hermes.md`/`AGENTS.md`/`SOUL.md`)과 퍼스널리티(`/personality`)를 설정한다
+- [x] **CORE-03**: 독자는 메모리 시스템(`MEMORY.md`/`USER.md`, SQLite FTS5 대화 검색, 압축)을 이해하고 활용한다
+- [x] **CORE-04**: 독자는 내장 툴과 툴 게이트웨이(`hermes tools`, 검색/이미지/TTS/브라우저)를 설정하고 승인 모드를 이해한다
 
 ### Learning & Automation (학습·자동화)
 
@@ -82,10 +82,10 @@
 | FOUND-02 | Phase 2 — Foundations | Complete |
 | FOUND-03 | Phase 2 — Foundations | Complete |
 | FOUND-04 | Phase 2 — Foundations | Complete |
-| CORE-01 | Phase 3 — Core Concepts | Pending |
-| CORE-02 | Phase 3 — Core Concepts | Pending |
-| CORE-03 | Phase 3 — Core Concepts | Pending |
-| CORE-04 | Phase 3 — Core Concepts | Pending |
+| CORE-01 | Phase 3 — Core Concepts | Complete |
+| CORE-02 | Phase 3 — Core Concepts | Complete |
+| CORE-03 | Phase 3 — Core Concepts | Complete |
+| CORE-04 | Phase 3 — Core Concepts | Complete |
 | LEARN-01 | Phase 4 — Learning & Automation | Pending |
 | LEARN-02 | Phase 4 — Learning & Automation | Pending |
 | LEARN-03 | Phase 4 — Learning & Automation | Pending |

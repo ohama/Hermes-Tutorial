@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Scaffold & CI** - mdBook 프로젝트 구조와 GitHub Pages 자동 배포 파이프라인 구축
 - [x] **Phase 2: Foundations** - 소개·설치·첫 실행·모델 설정 챕터 (Ch.0–3)
-- [ ] **Phase 3: Core Concepts** - 에이전트 루프·컨텍스트·메모리·툴 게이트웨이 챕터 (Ch.4–8)
+- [x] **Phase 3: Core Concepts** - 에이전트 루프·컨텍스트·메모리·툴 게이트웨이 챕터 (Ch.4–8)
 - [ ] **Phase 4: Learning & Automation** - 스킬·학습 루프·MCP·크론·서브에이전트 챕터 (Ch.9–13)
 - [ ] **Phase 5: Platforms & Operations** - 메시징 게이트웨이·배포·보안 챕터 (Ch.14–18)
 - [ ] **Phase 6: Reference** - CLI·슬래시 커맨드·설정·트러블슈팅 레퍼런스 부록
@@ -70,11 +70,11 @@ Plans:
 **Plans**: 5 plans
 
 Plans:
-- [ ] 03-01: Ch.4 에이전트 루프 — AIAgent 코어, `run_agent.py` 흐름, 프롬프트 3티어 구조
-- [ ] 03-02: Ch.5 컨텍스트 파일 — `.hermes.md`/`AGENTS.md`/`SOUL.md` 계층, 퍼스널리티 설정, `.env` vs `config.yaml` 분리
-- [ ] 03-03: Ch.6 메모리 — `MEMORY.md`/`USER.md`, SQLite FTS5 세션 검색, compression 설정, 비용 관리
-- [ ] 03-04: Ch.7 툴 게이트웨이 — `hermes tools`, 내장 툴 목록, 승인 모드, Nous Portal 유료 기능 경고
-- [ ] 03-05: Ch.8 터미널 백엔드 — local/Docker/SSH/Modal/Daytona 옵션 개요 (Docker 실습 포함)
+- [x] 03-01: Ch.4 에이전트 루프 — AIAgent 코어, `run_agent.py` 흐름, 프롬프트 3티어 구조
+- [x] 03-02: Ch.5 컨텍스트 파일 — `.hermes.md`/`AGENTS.md`/`SOUL.md` 계층, 퍼스널리티 설정, `.env` vs `config.yaml` 분리
+- [x] 03-03: Ch.6 메모리 — `MEMORY.md`/`USER.md`, SQLite FTS5 세션 검색, compression 설정, 비용 관리
+- [x] 03-04: Ch.7 툴 게이트웨이 — `hermes tools`, 내장 툴 목록, 승인 모드, Nous Portal 유료 기능 경고
+- [x] 03-05: Ch.8 터미널 백엔드 — local/Docker/SSH/Modal/Daytona 옵션 개요 (Docker 실습 포함)
 
 ---
 
@@ -144,11 +144,11 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 |-------|----------------|--------|-----------|
 | 1. Scaffold & CI | 3/3 | ✓ Complete | 2026-06-09 |
 | 2. Foundations | 4/4 | ✓ Complete | 2026-06-09 |
-| 3. Core Concepts | 0/5 | Not started | - |
+| 3. Core Concepts | 5/5 | ✓ Complete | 2026-06-10 |
 | 4. Learning & Automation | 0/5 | Not started | - |
 | 5. Platforms & Operations | 0/4 | Not started | - |
 | 6. Reference | 0/3 | Not started | - |
 
 ---
 *Roadmap created: 2026-06-05*
-*Last updated: 2026-06-09 after Phase 2 completion (Ch.0–3 live at https://ohama.github.io/Hermes-Tutorial/)*
+*Last updated: 2026-06-10 after Phase 3 completion (Ch.0–8 live at https://ohama.github.io/Hermes-Tutorial/)*
