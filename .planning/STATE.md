@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 
 ## Current Position
 
-Phase: 3 of 6 (Core Concepts) — **In progress**
-Plan: 5 of 5 in current phase — **03-05 DONE** (Wave 2: Ch.8 터미널 백엔드 complete)
-Status: 03-05 complete — Ch.8 터미널 백엔드 본문 287줄 작성; 6개 백엔드·전환 3방법·Docker 하드닝/핸즈온·원격 백엔드 개요·4개 주의 callout; mdbook build exit 0; SUMMARY.md 미수정
-Last activity: 2026-06-10 — Completed 03-05-PLAN.md (Ch.8 터미널 백엔드 — 6 backends + Docker 자동 하드닝 + 핸즈온 + MEDIUM/LOW callout + Phase 5 plain prose forward reference)
+Phase: 4 of 6 (Learning & Automation) — **In progress**
+Plan: 1 of 5 in current phase — **04-01 DONE** (Wave 1 owner: SUMMARY.md + Ch.9 스킬 시스템 + Ch.10~13 스켈레톤)
+Status: 04-01 complete — SUMMARY.md에 '# 학습과 자동화' 5-챕터 섹션 추가(총 14 링크); Ch.9 본문 314줄; Ch.10~13 placeholder; mdbook build exit 0
+Last activity: 2026-06-10 — Completed 04-01-PLAN.md (SUMMARY.md Wave-1 owner + Ch.9 스킬 시스템 본문 + Ch.10~13 스켈레톤)
 
-Progress: [██████████░] ~55% (10/~18 plans estimated)
+Progress: [████████████░] ~61% (11/~18 plans estimated)
 
 ## Performance Metrics
 
@@ -84,6 +84,11 @@ Recent decisions affecting current work:
 - 03-05: hermes setup terminal 마법사 흐름 MEDIUM → 검증 필요 callout (Open Question #3)
 - 03-05: Phase 5 전방 참조 = plain prose only (상대 링크 금지 — 파일 미존재)
 - 03-05: 원격 백엔드 섹션 상단에 전체 섹션 MEDIUM 신뢰도 경고 callout 배치
+- 04-01: SUMMARY.md Wave-1 단독 소유 패턴 계속 적용 — 후속 Wave-2 플랜(04-02~05)이 src/SUMMARY.md를 건드리지 않아도 됨, 중복 경로 빌드 오류 방지
+- 04-01: 번들 스킬 수를 '약 89개(v0.15.x)'로 기술 — 118(v0.10.0 과거값)·19,932 커뮤니티 집계 수치를 사실로 단언하지 않음
+- 04-01: 스킬 자동 생성 정확한 조건은 '> 검증 필요' 헤지로 처리 — '5회 툴 호출마다' 단언 금지
+- 04-01: hermes skills list 출력은 [로컬 실행 후 캡처 필요] placeholder + 검증 필요 callout
+- 04-01: Phase 4 검증 주석은 '# 검증: hermes rolling, 2026-06-10' (Phase 3의 06-09와 구분)
 
 ### Pending Todos
 
@@ -98,7 +103,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-10 (Plan 03-05 executed; Ch.8 터미널 백엔드 287줄; build exit 0; SUMMARY.md 미수정)
-Stopped at: Plan 03-05 complete — Ch.8 터미널 백엔드 완료; Wave 2 03-05 done; 나머지 Wave 2 플랜(03-03/04) 완료 후 Phase 3 전체 완성
+Last session: 2026-06-10 (Plan 04-01 executed; SUMMARY.md 14 챕터 링크; Ch.9 314줄; Ch.10~13 스켈레톤; mdbook build exit 0)
+Stopped at: Plan 04-01 complete — Phase 4 Wave-1 owner 완료; Wave-2 플랜(04-02~04-05)이 병렬로 Ch.10~13 본문 작성 가능
 Resume file: None
-Next workflow trigger: 03-03 / 03-04 완료 확인 후 Phase 3 complete; Phase 4 준비
+Next workflow trigger: 04-02(Ch.10 학습 루프) / 04-03(Ch.11 MCP) / 04-04(Ch.12 크론) / 04-05(Ch.13 서브에이전트) — Wave-2 병렬 실행 가능
