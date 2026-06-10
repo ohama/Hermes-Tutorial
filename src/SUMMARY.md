@@ -20,3 +20,13 @@
 - [메모리](06-memory/index.md)
 - [툴 게이트웨이](07-tools/index.md)
 - [터미널 백엔드](08-backends/index.md)
+
+---
+
+# 학습과 자동화
+
+- [스킬 시스템](09-skills/index.md)
+- [학습 루프](10-learning-loop/index.md)
+- [MCP 연동](11-mcp/index.md)
+- [크론 스케줄러](12-cron/index.md)
+- [서브에이전트](13-subagents/index.md)
