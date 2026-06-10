@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 3 of 6 (Core Concepts) — **In progress**
-Plan: 2 of 5 in current phase — **03-02 DONE** (Wave 2: Ch.5 컨텍스트 파일 complete)
-Status: 03-02 complete — Ch.5 컨텍스트 파일 본문 233줄 작성; 우선순위 캐스케이드·SOUL.md·/personality 14개·${VAR} 치환; mdbook build exit 0; SUMMARY.md 미수정
-Last activity: 2026-06-10 — Completed 03-02-PLAN.md (Ch.5 컨텍스트 파일 — .hermes.md→AGENTS.md→CLAUDE.md→.cursorrules 캐스케이드 + SOUL.md 전역 구분 + /personality 14개 + .env vs config.yaml 분리 + mdbook build exit 0)
+Plan: 5 of 5 in current phase — **03-05 DONE** (Wave 2: Ch.8 터미널 백엔드 complete)
+Status: 03-05 complete — Ch.8 터미널 백엔드 본문 287줄 작성; 6개 백엔드·전환 3방법·Docker 하드닝/핸즈온·원격 백엔드 개요·4개 주의 callout; mdbook build exit 0; SUMMARY.md 미수정
+Last activity: 2026-06-10 — Completed 03-05-PLAN.md (Ch.8 터미널 백엔드 — 6 backends + Docker 자동 하드닝 + 핸즈온 + MEDIUM/LOW callout + Phase 5 plain prose forward reference)
 
 Progress: [██████████░] ~55% (10/~18 plans estimated)
 
@@ -73,6 +73,14 @@ Recent decisions affecting current work:
 - 03-02: 배너 컨텍스트 로드 메시지 LOW → placeholder + 검증 필요 callout (발명 금지 패턴 준수)
 - 03-02: SOUL.md 위치 ~/ .hermes/SOUL.md HIGH confidence — 프로젝트 디렉터리 아님을 표로 강조
 - 03-02: 14개 내장 페르소나 정확히 표 나열 (RESEARCH.md HIGH confidence, 개수 발명 없음)
+- 03-04: agent.disabled_toolsets 키는 존재하지 않음 — toolsets 배열/hermes tools UI/session /tools disable 만 유효 (주의 callout에서만 언급)
+- 03-04: Nous Tool Gateway 무료 풀 정확 수치 단정 안 함 — Open Question #2, 검증 필요 callout + Nous Portal 가격 페이지 확인 안내
+- 03-04: kanban 툴셋 opt-in 명시 — all/* 와일드카드에도 미포함
+- 03-04: use_gateway: true는 직접 API 키보다 우선함 명시
+- 03-05: Docker 하드닝 플래그 목록은 설명 텍스트로 표현 — 독자 설정 불필요이므로 # 검증: 주석 예외 처리
+- 03-05: hermes setup terminal 마법사 흐름 MEDIUM → 검증 필요 callout (Open Question #3)
+- 03-05: Phase 5 전방 참조 = plain prose only (상대 링크 금지 — 파일 미존재)
+- 03-05: 원격 백엔드 섹션 상단에 전체 섹션 MEDIUM 신뢰도 경고 callout 배치
 
 ### Pending Todos
 
