@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 4 of 6 (Learning & Automation) — **In progress**
-Plan: 4 of 5 in current phase — **04-04 DONE** (Wave 2: Ch.12 크론 스케줄러 본문 233줄)
-Status: 04-04 complete — src/12-cron/index.md 233줄(hermes cron CLI·스케줄 형식·스킬 주입·다중 배달·workdir 순차 실행 함정·격리 세션 경고); mdbook build exit 0; SUMMARY.md 미수정
-Last activity: 2026-06-10 — Completed 04-04-PLAN.md (Ch.12 크론 스케줄러 본문 작성)
+Plan: 5 of 5 in current phase — **04-05 DONE** (Wave 2: Ch.13 서브에이전트 본문 303줄; Phase 4 마지막 챕터)
+Status: 04-05 complete — src/13-subagents/index.md 303줄(delegate_task 격리/동시성/leaf 제약 + Kanban 내구 SQLite 시스템 + 선택 기준 비교표); mdbook build exit 0; SUMMARY.md 미수정
+Last activity: 2026-06-10 — Completed 04-05-PLAN.md (Ch.13 서브에이전트 본문 작성)
 
-Progress: [██████████████░] ~67% (13/~18 plans estimated)
+Progress: [███████████████░] ~72% (14/~18 plans estimated)
 
 ## Performance Metrics
 
@@ -97,6 +97,10 @@ Recent decisions affecting current work:
 - 04-03: tools.include + tools.exclude 동시 설정 시 include 우선(exclude 무시); 화이트리스트 권장
 - 04-03: 에디터(Cursor/VS Code/Zed) MCP 설정 경로 미검증 → placeholder + 검증 필요 callout
 - 04-03: Task 2(빌드 검증)는 파일 변경 없음 — no-op 커밋 생략 패턴 계속 적용
+- 04-05: delegate_task Python 시그니처 코드블록은 실행 명령이 아닌 설명용 — 주석으로 명시, '# 검증:' 주석 예외 처리
+- 04-05: Kanban을 단순 opt-in toolset이 아닌 SQLite(kanban.db)+CLI+hermes dashboard+hermes gateway start dispatcher 내구 시스템으로 기술
+- 04-05: Phase 5 전방 참조 = plain prose only (14+ 챕터 파일 링크 없음) — 03-05 패턴 재확인
+- 04-05: Task 2(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 패턴 계속 적용 (03-03/04-03/04-04 동일)
 
 ### Pending Todos
 
@@ -111,7 +115,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-10 (Plan 04-04 executed; Ch.12 크론 스케줄러 본문 233줄; mdbook build exit 0; SUMMARY.md 미수정)
-Stopped at: Plan 04-04 complete — Ch.12 크론 스케줄러 본문 완성; Wave-2 나머지 플랜(04-02/04-05) 독립 실행 가능
+Last session: 2026-06-10 (Plan 04-05 executed; Ch.13 서브에이전트 본문 303줄; delegate_task+Kanban 내구 시스템+비교표; mdbook build exit 0; SUMMARY.md 미수정)
+Stopped at: Plan 04-05 complete — Phase 4 Wave-2 마지막 챕터(Ch.13 서브에이전트) 완성; 04-02(Ch.10 학습 루프) 미완료 시 해당 플랜 후 Phase 4 complete 처리 가능
 Resume file: None
-Next workflow trigger: 04-02(Ch.10 학습 루프) / 04-05(Ch.13 서브에이전트) — Wave-2 병렬 실행 가능
+Next workflow trigger: 04-02(Ch.10 학습 루프) — 아직 미완료라면 실행; 이후 `/gsd:complete-phase 04` → Phase 5(배포/게이트웨이) 시작
