@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Scaffold & CI** - mdBook 프로젝트 구조와 GitHub Pages 자동 배포 파이프라인 구축
 - [x] **Phase 2: Foundations** - 소개·설치·첫 실행·모델 설정 챕터 (Ch.0–3)
 - [x] **Phase 3: Core Concepts** - 에이전트 루프·컨텍스트·메모리·툴 게이트웨이 챕터 (Ch.4–8)
-- [ ] **Phase 4: Learning & Automation** - 스킬·학습 루프·MCP·크론·서브에이전트 챕터 (Ch.9–13)
+- [x] **Phase 4: Learning & Automation** - 스킬·학습 루프·MCP·크론·서브에이전트 챕터 (Ch.9–13)
 - [ ] **Phase 5: Platforms & Operations** - 메시징 게이트웨이·배포·보안 챕터 (Ch.14–18)
 - [ ] **Phase 6: Reference** - CLI·슬래시 커맨드·설정·트러블슈팅 레퍼런스 부록
 
@@ -91,11 +91,11 @@ Plans:
 **Plans**: 5 plans (Wave 1: 04-01 / Wave 2: 04-02~04-05 병렬)
 
 Plans:
-- [ ] 04-01: Ch.9 스킬 시스템 + SUMMARY.md 소유 — SKILL.md 형식, agentskills.io 표준, 직접 작성 실습, 번들 ~89개, 커뮤니티 허브
-- [ ] 04-02: Ch.10 학습 루프 — Do→Learn→Improve 사이클, 스킬 자가 개선, 플래그십 기능 실습
-- [ ] 04-03: Ch.11 MCP 연동 — 양방향(클라이언트 연결 + `hermes mcp serve` 메시징 툴 노출), ACP는 별개 통합
-- [ ] 04-04: Ch.12 크론 스케줄러 — `hermes cron` 무인 예약, 스킬 주입, 멀티플랫폼 배달, workdir 순차 실행 함정
-- [ ] 04-05: Ch.13 서브에이전트 — delegate_task 병렬 위임(최대 3 동시), Kanban 내구 시스템(dashboard/dispatcher), 선택 기준
+- [x] 04-01: Ch.9 스킬 시스템 + SUMMARY.md 소유 — SKILL.md 형식, agentskills.io 표준, 직접 작성 실습, 번들 ~89개, 커뮤니티 허브
+- [x] 04-02: Ch.10 학습 루프 — Do→Learn→Improve 사이클, 스킬 자가 개선, 플래그십 기능 실습
+- [x] 04-03: Ch.11 MCP 연동 — 양방향(클라이언트 연결 + `hermes mcp serve` 메시징 툴 노출), ACP는 별개 통합
+- [x] 04-04: Ch.12 크론 스케줄러 — `hermes cron` 무인 예약, 스킬 주입, 멀티플랫폼 배달, workdir 순차 실행 함정
+- [x] 04-05: Ch.13 서브에이전트 — delegate_task 병렬 위임(최대 3 동시), Kanban 내구 시스템(dashboard/dispatcher), 선택 기준
 
 ---
 
@@ -145,10 +145,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 1. Scaffold & CI | 3/3 | ✓ Complete | 2026-06-09 |
 | 2. Foundations | 4/4 | ✓ Complete | 2026-06-09 |
 | 3. Core Concepts | 5/5 | ✓ Complete | 2026-06-10 |
-| 4. Learning & Automation | 0/5 | Not started | - |
+| 4. Learning & Automation | 5/5 | ✓ Complete | 2026-06-10 |
 | 5. Platforms & Operations | 0/4 | Not started | - |
 | 6. Reference | 0/3 | Not started | - |
 
 ---
 *Roadmap created: 2026-06-05*
-*Last updated: 2026-06-10 after Phase 3 completion (Ch.0–8 live at https://ohama.github.io/Hermes-Tutorial/)*
+*Last updated: 2026-06-10 after Phase 4 completion (Ch.0–13 live at https://ohama.github.io/Hermes-Tutorial/)*

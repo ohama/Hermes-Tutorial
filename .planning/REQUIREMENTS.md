@@ -30,10 +30,10 @@
 
 ### Learning & Automation (학습·자동화)
 
-- [ ] **LEARN-01**: 독자는 스킬 시스템(SKILL.md, agentskills.io 표준, 자동 생성·자가 개선)을 이해하고 직접 스킬을 만든다
-- [ ] **LEARN-02**: 독자는 MCP 연동을 양방향으로 설정한다(외부 MCP 서버 연결 + `hermes mcp serve`)
-- [ ] **LEARN-03**: 독자는 cron 스케줄러로 무인 예약 작업을 설정한다
-- [ ] **LEARN-04**: 독자는 서브에이전트 스폰으로 병렬 작업을 위임한다
+- [x] **LEARN-01**: 독자는 스킬 시스템(SKILL.md, agentskills.io 표준, 자동 생성·자가 개선)을 이해하고 직접 스킬을 만든다
+- [x] **LEARN-02**: 독자는 MCP 연동을 양방향으로 설정한다(외부 MCP 서버 연결 + `hermes mcp serve`)
+- [x] **LEARN-03**: 독자는 cron 스케줄러로 무인 예약 작업을 설정한다
+- [x] **LEARN-04**: 독자는 서브에이전트 스폰으로 병렬 작업을 위임한다
 
 ### Platform & Operations (플랫폼·운영)
 
@@ -86,10 +86,10 @@
 | CORE-02 | Phase 3 — Core Concepts | Complete |
 | CORE-03 | Phase 3 — Core Concepts | Complete |
 | CORE-04 | Phase 3 — Core Concepts | Complete |
-| LEARN-01 | Phase 4 — Learning & Automation | Pending |
-| LEARN-02 | Phase 4 — Learning & Automation | Pending |
-| LEARN-03 | Phase 4 — Learning & Automation | Pending |
-| LEARN-04 | Phase 4 — Learning & Automation | Pending |
+| LEARN-01 | Phase 4 — Learning & Automation | Complete |
+| LEARN-02 | Phase 4 — Learning & Automation | Complete |
+| LEARN-03 | Phase 4 — Learning & Automation | Complete |
+| LEARN-04 | Phase 4 — Learning & Automation | Complete |
 | PLAT-01 | Phase 5 — Platforms & Operations | Pending |
 | PLAT-02 | Phase 5 — Platforms & Operations | Pending |
 | PLAT-03 | Phase 5 — Platforms & Operations | Pending |
