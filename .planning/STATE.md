@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-06-05)
 
 **Core value:** 개발자가 따라 하면 Hermes Agent를 설치·실행하고, 스킬·게이트웨이·배포까지 실제로 동작시킬 수 있다. 모든 명령어·API는 공식 소스 근거 필수.
-**Current focus:** Phase 3 — Core Concepts (content chapters Ch.4–8)
+**Current focus:** Phase 4 — Learning & Automation (content chapters Ch.9–13)
 
 ## Current Position
 
 Phase: 4 of 6 (Learning & Automation) — **In progress**
-Plan: 3 of 5 in current phase — **04-03 DONE** (Wave 2: Ch.11 MCP 연동 본문 274줄)
-Status: 04-03 complete — src/11-mcp/index.md 274줄(양방향 MCP + ACP 구분 + include 우선순위 + 보안); mdbook build exit 0; SUMMARY.md 미변경
-Last activity: 2026-06-10 — Completed 04-03-PLAN.md (Ch.11 MCP 연동 본문 작성)
+Plan: 4 of 5 in current phase — **04-04 DONE** (Wave 2: Ch.12 크론 스케줄러 본문 233줄)
+Status: 04-04 complete — src/12-cron/index.md 233줄(hermes cron CLI·스케줄 형식·스킬 주입·다중 배달·workdir 순차 실행 함정·격리 세션 경고); mdbook build exit 0; SUMMARY.md 미수정
+Last activity: 2026-06-10 — Completed 04-04-PLAN.md (Ch.12 크론 스케줄러 본문 작성)
 
-Progress: [█████████████░] ~65% (12/~18 plans estimated)
+Progress: [██████████████░] ~67% (13/~18 plans estimated)
 
 ## Performance Metrics
 
@@ -89,6 +89,9 @@ Recent decisions affecting current work:
 - 04-01: 스킬 자동 생성 정확한 조건은 '> 검증 필요' 헤지로 처리 — '5회 툴 호출마다' 단언 금지
 - 04-01: hermes skills list 출력은 [로컬 실행 후 캡처 필요] placeholder + 검증 필요 callout
 - 04-01: Phase 4 검증 주석은 '# 검증: hermes rolling, 2026-06-10' (Phase 3의 06-09와 구분)
+- 04-04: hermes cron run 독립 실행 여부 MEDIUM → 검증 필요 callout 두 곳 적용 (Open Question #4 미해결)
+- 04-04: workdir 지정 시 순차 실행 사이드이펙트(프로세스 전역 상태)를 주의 callout으로 명시 (RESEARCH.md HIGH)
+- 04-04: Task 2(빌드 검증) 소스 변경 없음 → no-op 커밋 생략 (03-03 패턴 재적용)
 - 04-03: hermes mcp serve = ~10개 플랫폼 메시징 툴 stdio 서버; 전체 에이전트 릴레이 단언 없음
 - 04-03: ACP(hermes acp) vs MCP 별개 통합 구분 — 이 튜토리얼은 MCP만, ACP는 간단 언급
 - 04-03: tools.include + tools.exclude 동시 설정 시 include 우선(exclude 무시); 화이트리스트 권장
@@ -108,7 +111,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-10 (Plan 04-03 executed; Ch.11 MCP 연동 본문 274줄; mdbook build exit 0; SUMMARY.md 미변경)
-Stopped at: Plan 04-03 complete — Ch.11 MCP 연동 본문 완성; Wave-2 나머지 플랜(04-02/04-04/04-05) 독립 실행 가능
+Last session: 2026-06-10 (Plan 04-04 executed; Ch.12 크론 스케줄러 본문 233줄; mdbook build exit 0; SUMMARY.md 미수정)
+Stopped at: Plan 04-04 complete — Ch.12 크론 스케줄러 본문 완성; Wave-2 나머지 플랜(04-02/04-05) 독립 실행 가능
 Resume file: None
-Next workflow trigger: 04-02(Ch.10 학습 루프) / 04-04(Ch.12 크론) / 04-05(Ch.13 서브에이전트) — Wave-2 병렬 실행 가능
+Next workflow trigger: 04-02(Ch.10 학습 루프) / 04-05(Ch.13 서브에이전트) — Wave-2 병렬 실행 가능
