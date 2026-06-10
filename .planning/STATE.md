@@ -101,6 +101,9 @@ Recent decisions affecting current work:
 - 04-05: Kanban을 단순 opt-in toolset이 아닌 SQLite(kanban.db)+CLI+hermes dashboard+hermes gateway start dispatcher 내구 시스템으로 기술
 - 04-05: Phase 5 전방 참조 = plain prose only (14+ 챕터 파일 링크 없음) — 03-05 패턴 재확인
 - 04-05: Task 2(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 패턴 계속 적용 (03-03/04-03/04-04 동일)
+- 04-02: Curator 트리거 = 비활동 기반(min_idle_hours 2h AND interval_hours 168h) 단독 — '15작업마다' 단언 금지 (RESEARCH.md 정정 반영)
+- 04-02: 스킬 저장 제안 문구·.usage.json 위치·curator status 출력 = LOW → placeholder + 검증 필요 callout
+- 04-02: Honcho = 선택 심화 aside 1~2단락 + 최소 설정 코드블록 1개만 (외부 계정 필요 명시, 필수 핸즈온 아님)
 
 ### Pending Todos
 
@@ -109,7 +112,7 @@ None yet.
 ### Blockers/Concerns
 
 - **[Node.js 20 deprecation — LOW, 2026-06-16]** GitHub Actions annotations warn that checkout@v4, configure-pages@v5, and upload-artifact@v4 use Node.js 20 (deprecated); GitHub forces Node 24 runtime from 2026-06-16. Non-blocking — actions continue to work post-migration. Future maintenance: update to action versions natively targeting Node 24 when available. Does NOT block Phase 2.
-- Phase 4: Honcho integration 세부 사항 (외부 계정 필요 여부, 정확한 config 키) MEDIUM confidence — Ch.10 작성 전 별도 검증 필요
+- ~~Phase 4: Honcho integration~~ RESOLVED — Ch.10(04-02)에서 honcho.dev 외부 계정 필요 및 최소 설정 키 기술 완료
 - Phase 5: Discord OAuth + Privileged Gateway Intents 흐름 2026-03 이후 변경 가능 — Discord 서브챕터 작성 전 검증 필요
 - Phase 5: Modal/Daytona 백엔드 YAML 키 공개 문서 미확인 — serverless 배포 섹션 작성 전 검증 필요
 
@@ -118,4 +121,4 @@ None yet.
 Last session: 2026-06-10 (Plan 04-05 executed; Ch.13 서브에이전트 본문 303줄; delegate_task+Kanban 내구 시스템+비교표; mdbook build exit 0; SUMMARY.md 미수정)
 Stopped at: Plan 04-05 complete — Phase 4 Wave-2 마지막 챕터(Ch.13 서브에이전트) 완성; 04-02(Ch.10 학습 루프) 미완료 시 해당 플랜 후 Phase 4 complete 처리 가능
 Resume file: None
-Next workflow trigger: 04-02(Ch.10 학습 루프) — 아직 미완료라면 실행; 이후 `/gsd:complete-phase 04` → Phase 5(배포/게이트웨이) 시작
+Next workflow trigger: 04-02(Ch.10 학습 루프) DONE — Phase 4 Wave-2 모든 챕터(Ch.10~13) 완성; `/gsd:complete-phase 04` → Phase 5(배포/게이트웨이) 시작
