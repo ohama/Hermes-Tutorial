@@ -83,19 +83,19 @@ Plans:
 **Depends on**: Phase 3
 **Requirements**: LEARN-01, LEARN-02, LEARN-03, LEARN-04
 **Success Criteria** (what must be TRUE):
-  1. Ch.9 스킬 챕터를 따라 `SKILL.md` 형식으로 직접 스킬을 작성하고 자동 생성 트리거(5회 이상 툴 호출)를 이해할 수 있다
+  1. Ch.9 스킬 챕터를 따라 `SKILL.md` 형식으로 직접 스킬을 작성하고 스킬 자동 생성/제안 트리거 개념을 이해할 수 있다 (정확한 트리거 조건은 로컬 검증 대상 — 사실 단언 금지)
   2. Ch.10 학습 루프 챕터를 따라 Do→Learn→Improve 사이클과 스킬 자가 개선 흐름을 실습할 수 있다
   3. Ch.11 MCP 연동 챕터를 따라 외부 MCP 서버 연결과 `hermes mcp serve` 양방향 설정을 완료할 수 있다
-  4. Ch.12 크론 챕터를 따라 `hermes gateway`로 무인 예약 작업을 등록하고 실행을 확인할 수 있다
+  4. Ch.12 크론 챕터를 따라 `hermes cron`으로 무인 예약 작업을 등록하고 실행을 확인할 수 있다 (`hermes gateway`는 스케줄 실행·결과 배달 서비스로만 사용)
   5. Ch.13 서브에이전트 챕터를 따라 병렬 작업 위임을 설정하고 Kanban 보드 흐름을 이해할 수 있다
-**Plans**: TBD
+**Plans**: 5 plans (Wave 1: 04-01 / Wave 2: 04-02~04-05 병렬)
 
 Plans:
-- [ ] 04-01: Ch.9 스킬 시스템 — SKILL.md 형식, agentskills.io 표준, 자동 생성, 커뮤니티 스킬 허브
+- [ ] 04-01: Ch.9 스킬 시스템 + SUMMARY.md 소유 — SKILL.md 형식, agentskills.io 표준, 직접 작성 실습, 번들 ~89개, 커뮤니티 허브
 - [ ] 04-02: Ch.10 학습 루프 — Do→Learn→Improve 사이클, 스킬 자가 개선, 플래그십 기능 실습
-- [ ] 04-03: Ch.11 MCP 연동 — 외부 MCP 서버 연결, `hermes mcp serve`, ACP vs MCP 구분
-- [ ] 04-04: Ch.12 크론 스케줄러 — 무인 예약 작업, 스킬 주입, 멀티플랫폼 배달, cron workdir 함정
-- [ ] 04-05: Ch.13 서브에이전트 — 병렬 작업 위임, Kanban 보드, 서브에이전트 스폰 실습
+- [ ] 04-03: Ch.11 MCP 연동 — 양방향(클라이언트 연결 + `hermes mcp serve` 메시징 툴 노출), ACP는 별개 통합
+- [ ] 04-04: Ch.12 크론 스케줄러 — `hermes cron` 무인 예약, 스킬 주입, 멀티플랫폼 배달, workdir 순차 실행 함정
+- [ ] 04-05: Ch.13 서브에이전트 — delegate_task 병렬 위임(최대 3 동시), Kanban 내구 시스템(dashboard/dispatcher), 선택 기준
 
 ---
 
