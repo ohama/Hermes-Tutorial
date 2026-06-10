@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-06-05)
 
 **Core value:** 개발자가 따라 하면 Hermes Agent를 설치·실행하고, 스킬·게이트웨이·배포까지 실제로 동작시킬 수 있다. 모든 명령어·API는 공식 소스 근거 필수.
-**Current focus:** Phase 2 — Foundations (content chapters Ch.0–3)
+**Current focus:** Phase 3 — Core Concepts (content chapters Ch.4–8)
 
 ## Current Position
 
-Phase: 2 of 6 (Foundations) — **Phase 2 COMPLETE**
-Plan: 4 of 4 in current phase — **ALL DONE** (02-01/02-02/02-03/02-04 complete)
-Status: Phase 2 complete — Ch.0~3 all written; mdbook build passing
-Last activity: 2026-06-09 — Completed 02-04-PLAN.md (Ch.3 모델 설정 — hermes model 마법사 + 공급자 표 + API 키 저장 분리 + config.yaml 모델 섹션 + 64K 요건 + ko 부분 지원 + 5개 주의 callout + mdbook build exit 0)
+Phase: 3 of 6 (Core Concepts) — **In progress**
+Plan: 1 of 5 in current phase — **03-01 DONE** (Wave 1 owner plan complete)
+Status: 03-01 complete — SUMMARY.md 핵심 개념 섹션 + Ch.4 에이전트 루프 작성; mdbook build passing; Wave 2 병렬 실행 준비
+Last activity: 2026-06-10 — Completed 03-01-PLAN.md (SUMMARY.md 핵심 개념 5개 챕터 + Ch.4 에이전트 루프 — 공식 사이클 Assemble→Call→Parse→Execute→Persist→Loop + 3티어 + ThreadPoolExecutor + max_turns 90 + mdbook build exit 0)
 
-Progress: [████████░░] ~44% (8/~18 plans estimated)
+Progress: [█████████░] ~50% (9/~18 plans estimated)
 
 ## Performance Metrics
 
@@ -29,10 +29,11 @@ Progress: [████████░░] ~44% (8/~18 plans estimated)
 |-------|-------|-------|----------|
 | 01-scaffold-ci | 3/3 (DONE) | ~33 min | ~11 min |
 | 02-foundations | 4/4 (DONE) | ~6 min | ~2 min |
+| 03-core-concepts | 1/5 (in progress) | ~3 min | ~3 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (2 min), 01-02 (1 min), 01-03 (~30 min incl. human-action), 02-01 (~2 min), 02-02 (~2 min), 02-03 (~2 min)
-- Trend: Wave-2 plans (02-02/03) very fast — pure content writing from RESEARCH, no human-action needed
+- Last 5 plans: 02-02 (~2 min), 02-03 (~2 min), 02-04 (~2 min), 03-01 (3 min)
+- Trend: Content plans very fast — pure writing from RESEARCH, no human-action needed
 
 *Updated after each plan completion*
 
@@ -66,6 +67,9 @@ Recent decisions affecting current work:
 - 02-04: Nous Portal 가격 LOW confidence — 공식 요금 페이지 확인 권장으로만 언급, 단정 없음
 - 02-04: display.language ko = 부분 지원 확정 기술 (정정 반영); '미지원' 표현 완전 제거
 - 02-04: Phase 3+ 다음 단계 = 평문 산문만 (Pitfall B-11 준수; 존재하지 않는 파일 링크 없음)
+- 03-01: perceive→decide→act 프레이밍 완전 배제 — 공식 사이클 Assemble→Call→Parse→Execute→Persist→Loop만 사용 (검증 항목으로 강제)
+- 03-01: SUMMARY.md owner-plan 패턴 재확인 — Wave 2 플랜(03-02~05)이 SUMMARY.md 쓰기 충돌 없이 병렬 실행 가능
+- 03-01: mdBook auto-created 05~08 files는 커밋 제외 — Wave 2 소유 파일이므로 Wave 2 플랜이 덮어씀
 
 ### Pending Todos
 
@@ -80,7 +84,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-09 (Plan 02-04 executed; Ch.3 모델 설정 완성; build exit 0; Phase 2 ALL DONE)
-Stopped at: Plan 02-04 complete — Phase 2 complete (4/4 plans done); Ch.0~3 all written; mdbook build passing
+Last session: 2026-06-10 (Plan 03-01 executed; SUMMARY.md 핵심 개념 섹션 + Ch.4 에이전트 루프 작성; build exit 0)
+Stopped at: Plan 03-01 complete — Phase 3 Wave 1 done; SUMMARY.md 9-chapter TOC confirmed; Ch.4 complete (196줄); Wave 2 ready
 Resume file: None
-Next workflow trigger: `/gsd:plan-phase 03` — Phase 3 (컨텍스트·메모리) 또는 `/gsd:complete-phase 02` to archive Phase 2
+Next workflow trigger: Wave 2 병렬 실행 — `/gsd:execute-plan 03-02` through `03-05` (Ch.5~8 본문 작성)
