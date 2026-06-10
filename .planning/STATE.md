@@ -95,7 +95,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-10 (Plan 03-02 executed; Ch.5 컨텍스트 파일 본문 233줄 작성; build exit 0; SUMMARY.md 미수정)
-Stopped at: Plan 03-02 complete — Phase 3 Wave 2 Ch.5 done; Ch.5 컨텍스트 파일 완성 (우선순위 캐스케이드 + SOUL.md + /personality 14개 + .env/config.yaml 분리); Wave 2 나머지 03-03~05 계속 가능
+Last session: 2026-06-10 (Plan 03-05 executed; Ch.8 터미널 백엔드 287줄; build exit 0; SUMMARY.md 미수정)
+Stopped at: Plan 03-05 complete — Ch.8 터미널 백엔드 완료; Wave 2 03-05 done; 나머지 Wave 2 플랜(03-03/04) 완료 후 Phase 3 전체 완성
 Resume file: None
-Next workflow trigger: Wave 2 계속 — `/gsd:execute-plan 03-03` (Ch.6 메모리), `03-04` (Ch.7 툴 게이트웨이), `03-05` (Ch.8 터미널 백엔드)
+Next workflow trigger: 03-03 / 03-04 완료 확인 후 Phase 3 complete; Phase 4 준비
