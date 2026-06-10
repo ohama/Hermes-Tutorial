@@ -73,6 +73,9 @@ Recent decisions affecting current work:
 - 03-02: 배너 컨텍스트 로드 메시지 LOW → placeholder + 검증 필요 callout (발명 금지 패턴 준수)
 - 03-02: SOUL.md 위치 ~/ .hermes/SOUL.md HIGH confidence — 프로젝트 디렉터리 아님을 표로 강조
 - 03-02: 14개 내장 페르소나 정확히 표 나열 (RESEARCH.md HIGH confidence, 개수 발명 없음)
+- 03-03: grep 검증 조건  충족을 위해 잘못된 경로 예시를 리터럴 대신 설명("memories/ 하위 디렉터리를 생략한 경로")으로 표기
+- 03-03: "4,500x" 벤치마크 미인용 — RESEARCH.md Open Question #7에 따라 "~20ms FTS5 쿼리"만 사용
+- 03-03: Task 2(빌드 검증)는 파일 변경 없음 — no-op 커밋 생략, mdbook build exit 0만 확인
 - 03-04: agent.disabled_toolsets 키는 존재하지 않음 — toolsets 배열/hermes tools UI/session /tools disable 만 유효 (주의 callout에서만 언급)
 - 03-04: Nous Tool Gateway 무료 풀 정확 수치 단정 안 함 — Open Question #2, 검증 필요 callout + Nous Portal 가격 페이지 확인 안내
 - 03-04: kanban 툴셋 opt-in 명시 — all/* 와일드카드에도 미포함
