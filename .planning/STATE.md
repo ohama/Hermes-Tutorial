@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 4 of 6 (Learning & Automation) — **In progress**
-Plan: 1 of 5 in current phase — **04-01 DONE** (Wave 1 owner: SUMMARY.md + Ch.9 스킬 시스템 + Ch.10~13 스켈레톤)
-Status: 04-01 complete — SUMMARY.md에 '# 학습과 자동화' 5-챕터 섹션 추가(총 14 링크); Ch.9 본문 314줄; Ch.10~13 placeholder; mdbook build exit 0
-Last activity: 2026-06-10 — Completed 04-01-PLAN.md (SUMMARY.md Wave-1 owner + Ch.9 스킬 시스템 본문 + Ch.10~13 스켈레톤)
+Plan: 3 of 5 in current phase — **04-03 DONE** (Wave 2: Ch.11 MCP 연동 본문 274줄)
+Status: 04-03 complete — src/11-mcp/index.md 274줄(양방향 MCP + ACP 구분 + include 우선순위 + 보안); mdbook build exit 0; SUMMARY.md 미변경
+Last activity: 2026-06-10 — Completed 04-03-PLAN.md (Ch.11 MCP 연동 본문 작성)
 
-Progress: [████████████░] ~61% (11/~18 plans estimated)
+Progress: [█████████████░] ~65% (12/~18 plans estimated)
 
 ## Performance Metrics
 
@@ -89,6 +89,11 @@ Recent decisions affecting current work:
 - 04-01: 스킬 자동 생성 정확한 조건은 '> 검증 필요' 헤지로 처리 — '5회 툴 호출마다' 단언 금지
 - 04-01: hermes skills list 출력은 [로컬 실행 후 캡처 필요] placeholder + 검증 필요 callout
 - 04-01: Phase 4 검증 주석은 '# 검증: hermes rolling, 2026-06-10' (Phase 3의 06-09와 구분)
+- 04-03: hermes mcp serve = ~10개 플랫폼 메시징 툴 stdio 서버; 전체 에이전트 릴레이 단언 없음
+- 04-03: ACP(hermes acp) vs MCP 별개 통합 구분 — 이 튜토리얼은 MCP만, ACP는 간단 언급
+- 04-03: tools.include + tools.exclude 동시 설정 시 include 우선(exclude 무시); 화이트리스트 권장
+- 04-03: 에디터(Cursor/VS Code/Zed) MCP 설정 경로 미검증 → placeholder + 검증 필요 callout
+- 04-03: Task 2(빌드 검증)는 파일 변경 없음 — no-op 커밋 생략 패턴 계속 적용
 
 ### Pending Todos
 
@@ -103,7 +108,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-10 (Plan 04-01 executed; SUMMARY.md 14 챕터 링크; Ch.9 314줄; Ch.10~13 스켈레톤; mdbook build exit 0)
-Stopped at: Plan 04-01 complete — Phase 4 Wave-1 owner 완료; Wave-2 플랜(04-02~04-05)이 병렬로 Ch.10~13 본문 작성 가능
+Last session: 2026-06-10 (Plan 04-03 executed; Ch.11 MCP 연동 본문 274줄; mdbook build exit 0; SUMMARY.md 미변경)
+Stopped at: Plan 04-03 complete — Ch.11 MCP 연동 본문 완성; Wave-2 나머지 플랜(04-02/04-04/04-05) 독립 실행 가능
 Resume file: None
-Next workflow trigger: 04-02(Ch.10 학습 루프) / 04-03(Ch.11 MCP) / 04-04(Ch.12 크론) / 04-05(Ch.13 서브에이전트) — Wave-2 병렬 실행 가능
+Next workflow trigger: 04-02(Ch.10 학습 루프) / 04-04(Ch.12 크론) / 04-05(Ch.13 서브에이전트) — Wave-2 병렬 실행 가능
