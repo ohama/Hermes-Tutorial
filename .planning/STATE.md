@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 3 of 6 (Core Concepts) — **In progress**
-Plan: 1 of 5 in current phase — **03-01 DONE** (Wave 1 owner plan complete)
-Status: 03-01 complete — SUMMARY.md 핵심 개념 섹션 + Ch.4 에이전트 루프 작성; mdbook build passing; Wave 2 병렬 실행 준비
-Last activity: 2026-06-10 — Completed 03-01-PLAN.md (SUMMARY.md 핵심 개념 5개 챕터 + Ch.4 에이전트 루프 — 공식 사이클 Assemble→Call→Parse→Execute→Persist→Loop + 3티어 + ThreadPoolExecutor + max_turns 90 + mdbook build exit 0)
+Plan: 2 of 5 in current phase — **03-02 DONE** (Wave 2: Ch.5 컨텍스트 파일 complete)
+Status: 03-02 complete — Ch.5 컨텍스트 파일 본문 233줄 작성; 우선순위 캐스케이드·SOUL.md·/personality 14개·${VAR} 치환; mdbook build exit 0; SUMMARY.md 미수정
+Last activity: 2026-06-10 — Completed 03-02-PLAN.md (Ch.5 컨텍스트 파일 — .hermes.md→AGENTS.md→CLAUDE.md→.cursorrules 캐스케이드 + SOUL.md 전역 구분 + /personality 14개 + .env vs config.yaml 분리 + mdbook build exit 0)
 
-Progress: [█████████░] ~50% (9/~18 plans estimated)
+Progress: [██████████░] ~55% (10/~18 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 9
 - Average duration: ~5 min
-- Total execution time: ~39 min
+- Total execution time: ~41 min
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [█████████░] ~50% (9/~18 plans estimated)
 |-------|-------|-------|----------|
 | 01-scaffold-ci | 3/3 (DONE) | ~33 min | ~11 min |
 | 02-foundations | 4/4 (DONE) | ~6 min | ~2 min |
-| 03-core-concepts | 1/5 (in progress) | ~3 min | ~3 min |
+| 03-core-concepts | 2/5 (in progress) | ~5 min | ~2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (~2 min), 02-03 (~2 min), 02-04 (~2 min), 03-01 (3 min)
+- Last 5 plans: 02-03 (~2 min), 02-04 (~2 min), 03-01 (3 min), 03-02 (~2 min)
 - Trend: Content plans very fast — pure writing from RESEARCH, no human-action needed
 
 *Updated after each plan completion*
@@ -70,6 +70,9 @@ Recent decisions affecting current work:
 - 03-01: perceive→decide→act 프레이밍 완전 배제 — 공식 사이클 Assemble→Call→Parse→Execute→Persist→Loop만 사용 (검증 항목으로 강제)
 - 03-01: SUMMARY.md owner-plan 패턴 재확인 — Wave 2 플랜(03-02~05)이 SUMMARY.md 쓰기 충돌 없이 병렬 실행 가능
 - 03-01: mdBook auto-created 05~08 files는 커밋 제외 — Wave 2 소유 파일이므로 Wave 2 플랜이 덮어씀
+- 03-02: 배너 컨텍스트 로드 메시지 LOW → placeholder + 검증 필요 callout (발명 금지 패턴 준수)
+- 03-02: SOUL.md 위치 ~/ .hermes/SOUL.md HIGH confidence — 프로젝트 디렉터리 아님을 표로 강조
+- 03-02: 14개 내장 페르소나 정확히 표 나열 (RESEARCH.md HIGH confidence, 개수 발명 없음)
 
 ### Pending Todos
 
@@ -84,7 +87,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-10 (Plan 03-01 executed; SUMMARY.md 핵심 개념 섹션 + Ch.4 에이전트 루프 작성; build exit 0)
-Stopped at: Plan 03-01 complete — Phase 3 Wave 1 done; SUMMARY.md 9-chapter TOC confirmed; Ch.4 complete (196줄); Wave 2 ready
+Last session: 2026-06-10 (Plan 03-02 executed; Ch.5 컨텍스트 파일 본문 233줄 작성; build exit 0; SUMMARY.md 미수정)
+Stopped at: Plan 03-02 complete — Phase 3 Wave 2 Ch.5 done; Ch.5 컨텍스트 파일 완성 (우선순위 캐스케이드 + SOUL.md + /personality 14개 + .env/config.yaml 분리); Wave 2 나머지 03-03~05 계속 가능
 Resume file: None
-Next workflow trigger: Wave 2 병렬 실행 — `/gsd:execute-plan 03-02` through `03-05` (Ch.5~8 본문 작성)
+Next workflow trigger: Wave 2 계속 — `/gsd:execute-plan 03-03` (Ch.6 메모리), `03-04` (Ch.7 툴 게이트웨이), `03-05` (Ch.8 터미널 백엔드)
