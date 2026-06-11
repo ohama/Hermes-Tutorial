@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-06-05)
 
 **Core value:** 개발자가 따라 하면 Hermes Agent를 설치·실행하고, 스킬·게이트웨이·배포까지 실제로 동작시킬 수 있다. 모든 명령어·API는 공식 소스 근거 필수.
-**Current focus:** Phase 6 — Reference (appendix chapters Ch.19–21) — Plan 06-01 COMPLETE
+**Current focus:** Phase 6 — Reference (appendix chapters Ch.19–21) — **ALL 3 PLANS COMPLETE** — 튜토리얼 전체(Ch.0–21) 완성
 
 ## Current Position
 
-Phase: 6 of 6 (Reference) — **In progress (1/3 plans done)**
-Plan: 1 of 3 in current phase — **06-01 ✓ 06-02 ○ 06-03 ○**
-Status: Phase 6 Plan 1 done — src/SUMMARY.md 레퍼런스 섹션(21개 목차) + src/19-cli-reference/index.md 320줄(Ch.19 CLI·슬래시 커맨드 레퍼런스: 카테고리 A~J + 슬래시 커맨드 + 정정 callout 2개) + 20/21 placeholder skeleton; mdbook build exit 0
-Last activity: 2026-06-11 — Completed 06-01-PLAN.md (Ch.19 CLI·슬래시 커맨드 레퍼런스 + SUMMARY.md 레퍼런스 섹션 Wave-1 owner)
+Phase: 6 of 6 (Reference) — **COMPLETE (3/3 plans done)**
+Plan: 3 of 3 in current phase — **06-01 ✓ 06-02 ✓ 06-03 ✓**
+Status: Phase 6 ALL plans done — Ch.19 CLI 레퍼런스 + Ch.20 config.yaml 레퍼런스 + Ch.21 마스터 트러블슈팅 색인; mdbook build exit 0; 튜토리얼 전체 완성
+Last activity: 2026-06-11 — Completed 06-03-PLAN.md (Ch.21 마스터 트러블슈팅 색인: 37개 오류 항목 집약 + 19개 백워드 챕터 링크 + 용어 사전 17개 항목)
 
-Progress: [██████████████████░] ~90% (17/~19 plans estimated)
+Progress: [███████████████████] ~100% (19/~19 plans — 튜토리얼 전체 완성)
 
 ## Performance Metrics
 
@@ -128,6 +128,8 @@ Recent decisions affecting current work:
 - 06-01: hermes doctor = 공급망 어드바이저리(설정 검증 아님) 정정 표로 명시 — hermes config check와 구분
 - 06-01: plan verify 텍스트('검증된 명령어만 수록')와 RESEARCH.md callout 원문('확인된')이 달라 '검증된'으로 맞춤 (의미 동일)
 - 06-01: Task 3(빌드 검증) 소스 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05/05-01 패턴 재확인)
+- 06-03: 트러블슈팅 표 자체는 코드블록이 아니므로 `# 검증:` 주석 예외 처리 — 실행 명령 없는 설명 테이블은 주석 불필요
+- 06-03: 백워드 링크 패턴 확정 — 대상 파일 존재 시 전방 참조 금지 규칙 비적용; ../NN-name/index.md#흔한-오류--주의 형식으로 19개 고유 챕터 링크 달성 (요구 최소 15개 초과)
 
 ### Pending Todos
 
@@ -142,7 +144,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-11 (Plan 06-01 executed; SUMMARY.md 레퍼런스 섹션(21개 목차) + Ch.19 CLI·슬래시 커맨드 레퍼런스 320줄 + 20/21 placeholder skeleton; mdbook build exit 0)
-Stopped at: Plan 06-01 complete — Phase 6 In progress (1/3 plans); SUMMARY.md Wave-1 소유 완료 → 06-02/06-03 Wave 2 병렬 실행 준비
+Last session: 2026-06-11 (Plan 06-03 executed; Ch.21 마스터 트러블슈팅 색인 230줄 작성 — 37개 항목 집약 + 19개 백워드 챕터 링크 + 용어 사전 17개; mdbook build exit 0)
+Stopped at: Plan 06-03 complete — Phase 6 ALL DONE (3/3 plans); 튜토리얼 전체(Ch.0–21) 완성
 Resume file: None
-Next workflow trigger: Phase 6 Plan 06-02 (Ch.20 config.yaml 레퍼런스) and/or 06-03 (Ch.21 마스터 트러블슈팅 색인) — Wave 2 병렬 실행 가능
+Next workflow trigger: `/gsd:complete-phase 06` to archive Phase 6 artifacts; or final review/deploy
