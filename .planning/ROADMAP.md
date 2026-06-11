@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Foundations** - 소개·설치·첫 실행·모델 설정 챕터 (Ch.0–3)
 - [x] **Phase 3: Core Concepts** - 에이전트 루프·컨텍스트·메모리·툴 게이트웨이 챕터 (Ch.4–8)
 - [x] **Phase 4: Learning & Automation** - 스킬·학습 루프·MCP·크론·서브에이전트 챕터 (Ch.9–13)
-- [ ] **Phase 5: Platforms & Operations** - 메시징 게이트웨이·배포·보안 챕터 (Ch.14–18)
+- [x] **Phase 5: Platforms & Operations** - 메시징 게이트웨이·배포·보안 챕터 (Ch.14–18)
 - [ ] **Phase 6: Reference** - CLI·슬래시 커맨드·설정·트러블슈팅 레퍼런스 부록
 
 ## Phase Details
@@ -111,10 +111,10 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 05-01: Ch.14 Telegram 게이트웨이 — 봇 토큰 설정, `hermes gateway run`, 폴링 중복 함정 + SUMMARY 소유
-- [ ] 05-02: Ch.15–16 추가 게이트웨이 — Discord (2-Intents 함정), Slack, WhatsApp/Signal/Email
-- [ ] 05-03: Ch.17 배포 전략 — VPS/Docker/SSH/Modal/Daytona 시나리오별 단계, Docker root 파일 함정
-- [ ] 05-04: Ch.18 보안 하드닝 — 승인 모드 설정, `.env` 키 관리, `redact_secrets`(자격증명 난독화), 운영 런북(`hermes doctor`/`config check`/`status`)
+- [x] 05-01: Ch.14 Telegram 게이트웨이 — 봇 토큰 설정, `hermes gateway run`, 폴링 중복 함정 + SUMMARY 소유
+- [x] 05-02: Ch.15–16 추가 게이트웨이 — Discord (2-Intents 함정), Slack, WhatsApp/Signal/Email
+- [x] 05-03: Ch.17 배포 전략 — VPS/Docker/SSH/Modal/Daytona 시나리오별 단계, Docker root 파일 함정
+- [x] 05-04: Ch.18 보안 하드닝 — 승인 모드 설정, `.env` 키 관리, `redact_secrets`(자격증명 난독화), 운영 런북(`hermes doctor`/`config check`/`status`)
 
 ---
 
@@ -146,9 +146,9 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 2. Foundations | 4/4 | ✓ Complete | 2026-06-09 |
 | 3. Core Concepts | 5/5 | ✓ Complete | 2026-06-10 |
 | 4. Learning & Automation | 5/5 | ✓ Complete | 2026-06-10 |
-| 5. Platforms & Operations | 0/4 | Not started | - |
+| 5. Platforms & Operations | 4/4 | ✓ Complete | 2026-06-11 |
 | 6. Reference | 0/3 | Not started | - |
 
 ---
 *Roadmap created: 2026-06-05*
-*Last updated: 2026-06-10 after Phase 4 completion (Ch.0–13 live at https://ohama.github.io/Hermes-Tutorial/)*
+*Last updated: 2026-06-11 after Phase 5 completion (Ch.0–18 live at https://ohama.github.io/Hermes-Tutorial/)*

@@ -37,9 +37,9 @@
 
 ### Platform & Operations (플랫폼·운영)
 
-- [ ] **PLAT-01**: 독자는 메시징 게이트웨이(Telegram/Discord/Slack 등) 봇을 설정한다(토큰, Discord Message Content Intent 함정 포함)
-- [ ] **PLAT-02**: 독자는 터미널 백엔드(local/Docker/SSH/Modal/Daytona)와 서버리스 배포를 구성한다
-- [ ] **PLAT-03**: 독자는 보안을 하드닝한다(승인 모드, `.env` 기반 API 키 관리, 프로덕션 주의점)
+- [x] **PLAT-01**: 독자는 메시징 게이트웨이(Telegram/Discord/Slack 등) 봇을 설정한다(토큰, Discord Message Content Intent 함정 포함)
+- [x] **PLAT-02**: 독자는 터미널 백엔드(local/Docker/SSH/Modal/Daytona)와 서버리스 배포를 구성한다
+- [x] **PLAT-03**: 독자는 보안을 하드닝한다(승인 모드, `.env` 기반 API 키 관리, 프로덕션 주의점)
 - [ ] **REF-01**: 독자는 CLI/슬래시/설정 레퍼런스와 통합 트러블슈팅 색인을 참조할 수 있다
 
 ## v2 Requirements
@@ -90,9 +90,9 @@
 | LEARN-02 | Phase 4 — Learning & Automation | Complete |
 | LEARN-03 | Phase 4 — Learning & Automation | Complete |
 | LEARN-04 | Phase 4 — Learning & Automation | Complete |
-| PLAT-01 | Phase 5 — Platforms & Operations | Pending |
-| PLAT-02 | Phase 5 — Platforms & Operations | Pending |
-| PLAT-03 | Phase 5 — Platforms & Operations | Pending |
+| PLAT-01 | Phase 5 — Platforms & Operations | Complete |
+| PLAT-02 | Phase 5 — Platforms & Operations | Complete |
+| PLAT-03 | Phase 5 — Platforms & Operations | Complete |
 | REF-01 | Phase 6 — Reference | Pending |
 
 **Coverage:**
