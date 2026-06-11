@@ -300,4 +300,6 @@ Kanban은 다양한 다중 에이전트 협업 패턴을 지원한다.
 
 이전 챕터: [Ch.12 크론 스케줄러](../12-cron/index.md) — 격리 에이전트 세션과 자동화 스케줄링.
 
-이 챕터에서 다룬 `hermes gateway start`는 Kanban 디스패처를 실행하는 명령이기도 하지만, Hermes의 게이트웨이 시스템 전체의 입구이기도 하다. Phase 5에서는 이 게이트웨이를 통해 Discord·Telegram 같은 플랫폼에 에이전트를 배포하고, 원격 백엔드와 연결하며, 멀티플랫폼 운영을 구성하는 방법을 다룬다. `hermes gateway start`로 Kanban 디스패처를 띄우는 것이 게이트웨이 운영의 첫 걸음이다.
+이 챕터에서 다룬 `hermes gateway start`는 Kanban 디스패처를 실행하는 명령이기도 하지만, Hermes의 게이트웨이 시스템 전체의 입구이기도 하다. 다음 단계에서는 이 게이트웨이를 통해 Discord·Telegram 같은 플랫폼에 에이전트를 배포하고, 원격 백엔드와 연결하며, 멀티플랫폼 운영을 구성하는 방법을 다룬다. `hermes gateway start`로 Kanban 디스패처를 띄우는 것이 게이트웨이 운영의 첫 걸음이다.
+
+다음: [Ch.14 메시징 게이트웨이](../14-gateways/index.md)

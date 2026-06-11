@@ -6,7 +6,7 @@
 
 ## 개요
 
-이 챕터에서는 macOS, Linux, WSL2, Windows 각 플랫폼에 Hermes를 설치하고, PATH를 반영한 뒤 `hermes doctor`로 설치를 검증합니다. PATH 재로드는 첫 실행 실패의 가장 흔한 원인이므로 설치 직후 반드시 수행하십시오.
+이 챕터에서는 macOS, Linux, WSL2, Windows 각 플랫폼에 Hermes를 설치하고, PATH를 반영한 뒤 `hermes version`으로 설치를 확인합니다. PATH 재로드는 첫 실행 실패의 가장 흔한 원인이므로 설치 직후 반드시 수행하십시오. (참고: `hermes doctor`는 흔히 "설치 검증" 도구로 오해되지만 실제로는 공급망 CVE 검사기입니다 — 정정 상세는 [Ch.18 보안](../18-security/index.md)·[Ch.19 CLI 레퍼런스](../19-cli-reference/index.md) 참고. 설정 검증은 `hermes config check`를 사용합니다.)
 
 ---
 
@@ -104,32 +104,35 @@ which hermes
 
 ---
 
-## 설치 검증: hermes doctor
+## 설치 확인과 진단 도구
 
-설치가 완료되면 아래 명령으로 설정과 의존성 문제를 점검하십시오.
+설치가 완료되면 먼저 `hermes version`으로 바이너리가 PATH에서 실행되는지 확인합니다.
 
 ```bash
 # 검증: hermes rolling, 2026-06-09
-hermes doctor
+hermes version
 ```
 
-설정과 의존성 문제를 점검하고 수정 방법을 제안합니다.
+설정 파일(`config.yaml`)의 유효성을 점검하려면 `hermes config check`를 사용합니다.
+
+```bash
+# 검증: hermes rolling, 2026-06-09
+hermes config check
+```
+
+> **정정 — `hermes doctor`는 설치/설정 검증 도구가 아닙니다.** `hermes doctor`는 활성 Python 환경에서 알려진 취약 패키지(CVE)를 검사하는 **공급망 어드바이저리** 도구입니다. 설정 검증은 위의 `hermes config check`를, 설치 확인은 `hermes version`을 사용하십시오. 자세한 내용은 [Ch.18 보안](../18-security/index.md)과 [Ch.19 CLI 레퍼런스](../19-cli-reference/index.md)를 참고하세요.
+
+```bash
+# 검증: hermes rolling, 2026-06-09
+hermes doctor   # 공급망 CVE 검사 (설치/설정 검증 아님)
+```
 
 ```text
 # [로컬 실행 후 캡처 필요 — 출력은 환경에 따라 다름]
 [hermes doctor 실제 출력 — 로컬 실행 후 캡처 교체 필요 (검증 미완)]
 ```
 
-> 검증 필요: 위 출력은 자리표시자입니다. 실제 hermes doctor 출력은 로컬 실행 후 캡처로 교체해야 합니다.
-
-문제가 발견된 경우 아래 명령으로 자동 복구를 시도할 수 있습니다.
-
-```bash
-# 검증: hermes rolling, 2026-06-09
-hermes doctor --fix
-```
-
-PATH 복구 시나리오를 포함해 설정·의존성 문제를 자동으로 수정합니다.
+> 검증 필요: 위 출력은 자리표시자입니다. 실제 `hermes doctor` 출력은 로컬 실행 후 캡처로 교체해야 합니다.
 
 ---
 

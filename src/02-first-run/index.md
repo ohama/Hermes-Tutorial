@@ -108,9 +108,9 @@ hermes --continue
 | `hermes tools` | 도구 설정 (대화형) |
 | `hermes tools --summary` | 현재 도구 상태 출력 |
 | `hermes gateway` | 메시징 플랫폼 서비스 관리 |
-| `hermes doctor` | 설치·설정 진단 |
-| `hermes doctor --fix` | 자동 복구 시도 |
-| `hermes version` | 버전 정보 출력 |
+| `hermes doctor` | 공급망 CVE 검사 (설정 검증은 `hermes config check`) |
+| `hermes config check` | 설정 파일 유효성 검사 |
+| `hermes version` | 설치 확인 / 버전 정보 출력 |
 | `hermes config show` | 현재 설정 전체 출력 |
 | `hermes sessions list` | 세션 목록 |
 
