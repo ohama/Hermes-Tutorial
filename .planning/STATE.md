@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 5 of 6 (Platforms & Operations) — **In progress**
-Plan: 1 of 4 in current phase — **05-01 DONE** (Wave 1: SUMMARY.md 스켈레톤 + Ch.14 Telegram 게이트웨이 본문 221줄)
-Status: 05-01 complete — src/SUMMARY.md 18개 링크(플랫폼과 운영 4항목 추가); src/14-gateways/index.md 221줄; 15/17/18 스켈레톤; mdbook build exit 0
-Last activity: 2026-06-11 — Completed 05-01-PLAN.md (SUMMARY.md 스켈레톤 + Ch.14 Telegram 게이트웨이)
+Plan: 3 of 4 in current phase — **05-03 DONE** (Wave 2: Ch.17 프로덕션 배포 본문 353줄)
+Status: 05-01 ✓ 05-02 (in progress) 05-03 ✓ — src/17-deploy/index.md 353줄; Docker/VPS/SSH/Modal/Daytona/API서버/함정; mdbook build exit 0
+Last activity: 2026-06-11 — Completed 05-03-PLAN.md (Ch.17 프로덕션 배포)
 
 Progress: [████████████████░] ~78% (15/~19 plans estimated)
 
@@ -109,6 +109,10 @@ Recent decisions affecting current work:
 - 05-01: hermes gateway vs hermes gateway run 구분 명시 — run은 Docker 내 실행; gateway start는 install 이후 서비스 시작 전용
 - 05-01: Phase 5 검증 주석은 '# 검증: hermes rolling, 2026-06-11' (Phase 4의 06-10과 구분)
 - 05-01: Task 3(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05 동일 패턴)
+- 05-03: hermes gateway run(Docker 내 메인 프로세스 실행) vs hermes gateway start(install 이후 서비스 시작) 구분 확정 — 05-01 결정 재확인
+- 05-03: sudo hermes gateway install --system 경로 MEDIUM → 검증 필요 callout; Ubuntu VPS 직접 확인 안내
+- 05-03: Modal managed mode DEFERRED + modal_image 키 MEDIUM → 검증 필요 callout
+- 05-03: Tasks 1+2를 단일 파일 작성으로 처리 (02-02/03-03 패턴 재적용)
 
 ### Pending Todos
 
@@ -123,7 +127,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-11 (Plan 05-01 executed; SUMMARY.md 18-챕터 스켈레톤 + Ch.14 Telegram 게이트웨이 본문 221줄; 15/17/18 스켈레톤; mdbook build exit 0)
-Stopped at: Plan 05-01 complete — Phase 5 Wave-1 소유자 플랜 완성; Wave-2(05-02~05-04) 병렬 실행 기반 확립
+Last session: 2026-06-11 (Plan 05-03 executed; Ch.17 프로덕션 배포 본문 353줄; Docker/VPS systemd/SSH/Modal/Daytona/API서버/함정; mdbook build exit 0)
+Stopped at: Plan 05-03 complete — Ch.17 배포 챕터 완성; Wave-2 중 05-02/05-04 미완료
 Resume file: None
-Next workflow trigger: Phase 5 Wave-2 시작 — 05-02(Ch.15 추가 게이트웨이) / 05-03(Ch.17 프로덕션 배포) / 05-04(Ch.18 보안 하드닝) 병렬 실행 가능
+Next workflow trigger: 05-02(Ch.15 추가 게이트웨이) / 05-04(Ch.18 보안 하드닝) — Wave-2 나머지 실행 가능
