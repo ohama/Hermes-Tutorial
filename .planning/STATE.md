@@ -2,151 +2,43 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-06-05)
+See: .planning/PROJECT.md (updated 2026-06-11)
 
 **Core value:** 개발자가 따라 하면 Hermes Agent를 설치·실행하고, 스킬·게이트웨이·배포까지 실제로 동작시킬 수 있다. 모든 명령어·API는 공식 소스 근거 필수.
-**Current focus:** Phase 6 — Reference (appendix chapters Ch.19–21) — Plan 06-02 COMPLETE
+**Current focus:** v1 SHIPPED — 다음 마일스톤 계획 대기 (`/gsd:new-milestone`)
 
 ## Current Position
 
-Phase: 6 of 6 (Reference) — **In progress (2/3 plans done)**
-Plan: 2 of 3 in current phase — **06-01 ✓ 06-02 ✓ 06-03 ○**
-Status: Phase 6 Plan 2 done — Ch.20 config.yaml 레퍼런스 568줄 (14개 영역 + approvals 충돌 헤지 + disabled_toolsets/redact_secrets 정정); mdbook build exit 0; SUMMARY.md 미수정
-Last activity: 2026-06-11 — Completed 06-02-PLAN.md (Ch.20 config.yaml 레퍼런스: display/model/agent/memory/compression/toolsets/approvals/security/terminal/delegation/mcp_servers/skills/cron/curator)
+Milestone: v1 MVP — **COMPLETE & SHIPPED (2026-06-11)**
+Phase: — (all 6 phases archived)
+Status: Ready to plan next milestone
+Last activity: 2026-06-11 — v1 milestone archived & tagged (milestone-v1)
 
-Progress: [██████████████████░] ~95% (18/~19 plans estimated)
+Progress: [██████████] 100% — 6/6 phases, 24/24 plans, 20/20 requirements
 
-## Performance Metrics
+## Milestone Record
 
-**Velocity:**
-- Total plans completed: 9
-- Average duration: ~5 min
-- Total execution time: ~41 min
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 01-scaffold-ci | 3/3 (DONE) | ~33 min | ~11 min |
-| 02-foundations | 4/4 (DONE) | ~6 min | ~2 min |
-| 03-core-concepts | 2/5 (in progress) | ~5 min | ~2.5 min |
-
-**Recent Trend:**
-- Last 5 plans: 02-03 (~2 min), 02-04 (~2 min), 03-01 (3 min), 03-02 (~2 min)
-- Trend: Content plans very fast — pure writing from RESEARCH, no human-action needed
-
-*Updated after each plan completion*
+**v1 MVP:** 21-chapter Korean mdBook tutorial for Hermes Agent, live at https://ohama.github.io/Hermes-Tutorial/.
+- Archived: `.planning/milestones/v1-ROADMAP.md`, `v1-REQUIREMENTS.md`, `v1-MILESTONE-AUDIT.md`, `v1-phases/`
+- Stats: 6 phases, 24 plans, ~5,610 lines, 82 commits, 7 days
+- Full record: `.planning/MILESTONES.md`
 
 ## Accumulated Context
 
-### Decisions
+### Key facts carried forward
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
+- Repo: `ohama/Hermes-Tutorial`; remote origin set; push to main auto-deploys via GitHub Actions (`deploy-pages@v5`). Live: https://ohama.github.io/Hermes-Tutorial/
+- mdBook 0.5.3; `book.toml` site-url=`/Hermes-Tutorial/`, language=`ko`. SUMMARY.md = 21 chapter links across 5 sections.
+- Accuracy corrections established in v1 (apply consistently in v2): `hermes doctor`=공급망 CVE 어드바이저리(설정 검증은 `hermes config check`); `hermes security audit` 미존재; `agent.disabled_toolsets` 미존재; PII=`security.redact_secrets` 한정; cron CLI=`hermes cron`(not gateway); MCP/ACP 별개; `display.language: ko` 부분 지원.
+- Pattern: SUMMARY.md owner-plan (Wave 1 owns SUMMARY + writes 1 chapter; Wave 2 body-only parallel). Verify greps must include file-path args.
 
-- Init: mdBook 0.5.3 + `actions/deploy-pages@v5` 공식 스타터 워크플로우 사용 (pre-built 바이너리, cargo install 금지)
-- Init: 한국어 UI (`display.language: ko`) 초기 기록은 "미지원" — 02-01 RESEARCH.md에서 정정됨 (아래 참조)
-- 02-01: 한국어 UI **부분 지원** 정정 — `ko`는 지원 목록에 있으나 범위 협소(승인 프롬프트 등 정적 메시지만 번역; 에이전트 응답·로그·도구 출력은 영어 유지). Ch.3에서 정확히 설명할 것.
-- 02-01: SUMMARY.md Wave-1 단독 소유 패턴 확립 — 후속 Wave-2 플랜(02-02/03/04)이 src/SUMMARY.md를 건드리지 않아도 됨, 중복 경로 빌드 오류 방지
-- 02-01: mdBook 0.5.3 auto-placeholder 패턴 확인 — SUMMARY.md 링크 미작성 파일은 build 시 자동 생성됨 (exit 0)
-- Init: 코드블록 버전·검토일 주석 관례 (`# 검증: hermes vX.Y, YYYY-MM-DD`) Phase 1부터 적용
-- 01-01: mdBook 0.5.3 was already on PATH (pre-built binary); installation step skipped per plan's skip-if-present instruction
-- 01-01: `<owner>` placeholders left in git-repository-url/edit-url-template — plan 01-03 reconciles once remote exists
-- 01-01: book.toml must NOT include multilingual/curly-quotes/copy-fonts/google-analytics/smart-punctuation/hash-files (removed in 0.5.0, cause hard errors)
-- 01-02: deploy.yml uses pre-built binary install (not cargo install); pins deploy-pages@v5; permissions pages:write + id-token:write required by deploy-pages
-- 01-02: YAML validation via PyYAML (python3 yaml.safe_load) — confirmed available on system
-- 01-03: owner=ohama, repo=Hermes-Tutorial; remote=https://github.com/ohama/Hermes-Tutorial; live URL=https://ohama.github.io/Hermes-Tutorial/
-- 01-03: book.toml site-url="/Hermes-Tutorial/", git-repository-url/edit-url-template reconciled to ohama/Hermes-Tutorial (commit cc2701b)
-- 01-03: GitHub Pages source must be enabled (build_type=workflow via gh api) BEFORE first push — ordering non-negotiable (Pitfall 3)
-- 01-03: Workflow run 27192158593 green (build 7s + deploy 10s); live site HTTP 200, Korean TOC renders
-- 02-02: hermes doctor 출력 LOW confidence → placeholder + 검증 필요 callout; 발명 금지 패턴 확립
-- 02-02: hermes version 예시(0.8.0) MEDIUM confidence → "예시" 명시, 현재 버전으로 단정하지 않음
-- 02-02: Tasks 1+2를 단일 파일 작성으로 처리 — 동일 파일 순차 편집이므로 완전한 파일 한 번에 작성 + atomic commit
-- 02-04: OpenAI env var `OPENAI_API_KEY` MEDIUM confidence — 표에 불확실성 표기, 마법사로 확인 권장
-- 02-04: Ollama 컨텍스트 플래그 `--num-ctx` LOW confidence — 검증 필요 callout로 처리
-- 02-04: Nous Portal 가격 LOW confidence — 공식 요금 페이지 확인 권장으로만 언급, 단정 없음
-- 02-04: display.language ko = 부분 지원 확정 기술 (정정 반영); '미지원' 표현 완전 제거
-- 02-04: Phase 3+ 다음 단계 = 평문 산문만 (Pitfall B-11 준수; 존재하지 않는 파일 링크 없음)
-- 03-01: perceive→decide→act 프레이밍 완전 배제 — 공식 사이클 Assemble→Call→Parse→Execute→Persist→Loop만 사용 (검증 항목으로 강제)
-- 03-01: SUMMARY.md owner-plan 패턴 재확인 — Wave 2 플랜(03-02~05)이 SUMMARY.md 쓰기 충돌 없이 병렬 실행 가능
-- 03-01: mdBook auto-created 05~08 files는 커밋 제외 — Wave 2 소유 파일이므로 Wave 2 플랜이 덮어씀
-- 03-02: 배너 컨텍스트 로드 메시지 LOW → placeholder + 검증 필요 callout (발명 금지 패턴 준수)
-- 03-02: SOUL.md 위치 ~/ .hermes/SOUL.md HIGH confidence — 프로젝트 디렉터리 아님을 표로 강조
-- 03-02: 14개 내장 페르소나 정확히 표 나열 (RESEARCH.md HIGH confidence, 개수 발명 없음)
-- 03-03: grep 검증 조건  충족을 위해 잘못된 경로 예시를 리터럴 대신 설명("memories/ 하위 디렉터리를 생략한 경로")으로 표기
-- 03-03: "4,500x" 벤치마크 미인용 — RESEARCH.md Open Question #7에 따라 "~20ms FTS5 쿼리"만 사용
-- 03-03: Task 2(빌드 검증)는 파일 변경 없음 — no-op 커밋 생략, mdbook build exit 0만 확인
-- 03-04: agent.disabled_toolsets 키는 존재하지 않음 — toolsets 배열/hermes tools UI/session /tools disable 만 유효 (주의 callout에서만 언급)
-- 03-04: Nous Tool Gateway 무료 풀 정확 수치 단정 안 함 — Open Question #2, 검증 필요 callout + Nous Portal 가격 페이지 확인 안내
-- 03-04: kanban 툴셋 opt-in 명시 — all/* 와일드카드에도 미포함
-- 03-04: use_gateway: true는 직접 API 키보다 우선함 명시
-- 03-05: Docker 하드닝 플래그 목록은 설명 텍스트로 표현 — 독자 설정 불필요이므로 # 검증: 주석 예외 처리
-- 03-05: hermes setup terminal 마법사 흐름 MEDIUM → 검증 필요 callout (Open Question #3)
-- 03-05: Phase 5 전방 참조 = plain prose only (상대 링크 금지 — 파일 미존재)
-- 03-05: 원격 백엔드 섹션 상단에 전체 섹션 MEDIUM 신뢰도 경고 callout 배치
-- 04-01: SUMMARY.md Wave-1 단독 소유 패턴 계속 적용 — 후속 Wave-2 플랜(04-02~05)이 src/SUMMARY.md를 건드리지 않아도 됨, 중복 경로 빌드 오류 방지
-- 04-01: 번들 스킬 수를 '약 89개(v0.15.x)'로 기술 — 118(v0.10.0 과거값)·19,932 커뮤니티 집계 수치를 사실로 단언하지 않음
-- 04-01: 스킬 자동 생성 정확한 조건은 '> 검증 필요' 헤지로 처리 — '5회 툴 호출마다' 단언 금지
-- 04-01: hermes skills list 출력은 [로컬 실행 후 캡처 필요] placeholder + 검증 필요 callout
-- 04-01: Phase 4 검증 주석은 '# 검증: hermes rolling, 2026-06-10' (Phase 3의 06-09와 구분)
-- 04-04: hermes cron run 독립 실행 여부 MEDIUM → 검증 필요 callout 두 곳 적용 (Open Question #4 미해결)
-- 04-04: workdir 지정 시 순차 실행 사이드이펙트(프로세스 전역 상태)를 주의 callout으로 명시 (RESEARCH.md HIGH)
-- 04-04: Task 2(빌드 검증) 소스 변경 없음 → no-op 커밋 생략 (03-03 패턴 재적용)
-- 04-03: hermes mcp serve = ~10개 플랫폼 메시징 툴 stdio 서버; 전체 에이전트 릴레이 단언 없음
-- 04-03: ACP(hermes acp) vs MCP 별개 통합 구분 — 이 튜토리얼은 MCP만, ACP는 간단 언급
-- 04-03: tools.include + tools.exclude 동시 설정 시 include 우선(exclude 무시); 화이트리스트 권장
-- 04-03: 에디터(Cursor/VS Code/Zed) MCP 설정 경로 미검증 → placeholder + 검증 필요 callout
-- 04-03: Task 2(빌드 검증)는 파일 변경 없음 — no-op 커밋 생략 패턴 계속 적용
-- 04-05: delegate_task Python 시그니처 코드블록은 실행 명령이 아닌 설명용 — 주석으로 명시, '# 검증:' 주석 예외 처리
-- 04-05: Kanban을 단순 opt-in toolset이 아닌 SQLite(kanban.db)+CLI+hermes dashboard+hermes gateway start dispatcher 내구 시스템으로 기술
-- 04-05: Phase 5 전방 참조 = plain prose only (14+ 챕터 파일 링크 없음) — 03-05 패턴 재확인
-- 04-05: Task 2(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 패턴 계속 적용 (03-03/04-03/04-04 동일)
-- 04-02: Curator 트리거 = 비활동 기반(min_idle_hours 2h AND interval_hours 168h) 단독 — '15작업마다' 단언 금지 (RESEARCH.md 정정 반영)
-- 04-02: 스킬 저장 제안 문구·.usage.json 위치·curator status 출력 = LOW → placeholder + 검증 필요 callout
-- 04-02: Honcho = 선택 심화 aside 1~2단락 + 최소 설정 코드블록 1개만 (외부 계정 필요 명시, 필수 핸즈온 아님)
-- 05-01: Ch.14 디렉터리는 14-gateways/ (연구 초안의 14-telegram/ 아님) — PLAN.md planning_context 확정값
-- 05-01: 16-* 항목/디렉터리 없음 — Ch.15–16은 15-more-gateways 단일 파일이 커버 (mdBook 중복 빌드 오류 방지)
-- 05-01: hermes gateway vs hermes gateway run 구분 명시 — run은 Docker 내 실행; gateway start는 install 이후 서비스 시작 전용
-- 05-01: Phase 5 검증 주석은 '# 검증: hermes rolling, 2026-06-11' (Phase 4의 06-10과 구분)
-- 05-01: Task 3(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05 동일 패턴)
-- 05-03: hermes gateway run(Docker 내 메인 프로세스 실행) vs hermes gateway start(install 이후 서비스 시작) 구분 확정 — 05-01 결정 재확인
-- 05-03: sudo hermes gateway install --system 경로 MEDIUM → 검증 필요 callout; Ubuntu VPS 직접 확인 안내
-- 05-03: Modal managed mode DEFERRED + modal_image 키 MEDIUM → 검증 필요 callout
-- 05-03: Tasks 1+2를 단일 파일 작성으로 처리 (02-02/03-03 패턴 재적용)
-- 05-02: Discord Message Content Intent를 챕터 상단 미리읽기 callout + 하단 전용 오류 섹션 두 곳에 배치 — #1 무반응 원인이므로 이중 배치로 강조
-- 05-02: WhatsApp/Signal MEDIUM 신뢰도를 섹션 헤더 직후 blockquote로 명시 — 개요 수준, 깊은 보장 없음 선제 전달
-- 05-02: hermes gateway setup 마법사 UI, slack manifest JSON 내용 → 검증 필요 callout (Open Question #2, #8 미해결)
-- 05-02: Task 2(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05/05-01 동일 패턴)
-- 05-04: hermes doctor = 공급망 어드바이저리 검사기(Python 패키지 CVE); 설정 검증은 hermes config check — doctor가 설정 검증한다는 표현 완전 배제
-- 05-04: hermes security audit 명령 존재하지 않음 — 정정 callout으로만 언급; 실행 명령으로 제시 금지
-- 05-04: security.redact_secrets = MCP 오류 메시지의 자격증명 패턴 난독화 (일반 PII 필터 아님); 별도 PII 리댁션 설정 키 없음
-- 05-04: approvals.mode 프로덕션 권장 = manual 유지 (off 경고: YOLO mode 빨간 배너 표시)
-- 05-04: Phase 6 전방 참조 = plain prose only (06-* mdBook 링크 금지 패턴 — Phase 6 레퍼런스 부록 미존재)
-- 05-04: Tasks 1+2 단일 파일 작성 처리 — no-op Task 2 커밋 생략 (02-02/05-03 패턴 재적용)
-- 06-01: Phase 6 검증 주석은 '# 검증: hermes rolling, 2026-06-11' (Phase 5의 06-11과 동일)
-- 06-01: hermes security audit = 존재하지 않음 정정 callout으로만 (사용 명령 목록 제외) — Ch.18 패턴 유지
-- 06-01: hermes doctor = 공급망 어드바이저리(설정 검증 아님) 정정 표로 명시 — hermes config check와 구분
-- 06-01: plan verify 텍스트('검증된 명령어만 수록')와 RESEARCH.md callout 원문('확인된')이 달라 '검증된'으로 맞춤 (의미 동일)
-- 06-01: Task 3(빌드 검증) 소스 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05/05-01 패턴 재확인)
-- 06-02: approvals.timeout 기본값(60 vs 300)과 cron_mode 값(deny|approve vs manual|auto)을 어느 한쪽으로도 단정하지 않고 YAML 인라인 주석 + `> 검증 필요` callout으로 양쪽 제시 (두 연구 파일 간 실제 불일치; hermes config show 로컬 확인 안내)
-- 06-02: agent.disabled_toolsets는 미존재 키 표에서만 언급 — 사용 가능한 키 목록에 포함 안 함 (toolsets 배열/hermes tools UI가 대안)
-- 06-02: security.redact_secrets = MCP 오류 메시지의 자격증명 패턴(ghp_/sk-/Bearer) 난독화만 (일반 PII 필터 아님, 별도 PII 리댁션 키 없음)
-- 06-02: Task 2 빌드 검증 소스 변경 없음 → no-op 커밋 생략 (03-03/04-03 패턴 재적용)
+### Blockers/Concerns (carried to next milestone)
 
-### Pending Todos
-
-None yet.
-
-### Blockers/Concerns
-
-- **[Node.js 20 deprecation — LOW, 2026-06-16]** GitHub Actions annotations warn that checkout@v4, configure-pages@v5, and upload-artifact@v4 use Node.js 20 (deprecated); GitHub forces Node 24 runtime from 2026-06-16. Non-blocking — actions continue to work post-migration. Future maintenance: update to action versions natively targeting Node 24 when available. Does NOT block Phase 2.
-- ~~Phase 4: Honcho integration~~ RESOLVED — Ch.10(04-02)에서 honcho.dev 외부 계정 필요 및 최소 설정 키 기술 완료
-- ~~Phase 5: Discord OAuth + Privileged Gateway Intents 흐름 2026-03 이후 변경 가능~~ 05-02 기술 완료 — RESEARCH.md HIGH confidence로 기술; 실제 포털 확인 권장 (non-blocking)
-- Phase 5: Modal/Daytona 백엔드 YAML 키 공개 문서 미확인 — serverless 배포 섹션 작성 전 검증 필요
+- **[Node.js 20 deprecation — LOW, 2026-06-16]** GitHub forces Node 24 on Actions from 2026-06-16; pinned actions (checkout@v4/configure-pages@v5/upload-artifact@v4) keep working. Update action versions when convenient.
+- **[Local-capture placeholders — tech debt]** Several outputs marked `[로컬 실행 후 캡처 필요]` need a live Hermes run to replace with real captures (hermes doctor, gateway setup wizard, welcome banner, dashboard, cron run independence, mcp serve tool list). All deliberately hedged, not fabricated.
 
 ## Session Continuity
 
-Last session: 2026-06-11 (Plan 06-02 executed; Ch.20 config.yaml 레퍼런스 568줄 작성 — 14개 영역 + approvals 충돌 헤지 + disabled_toolsets/redact_secrets 정정; mdbook build exit 0)
-Stopped at: Plan 06-02 complete — Phase 6 In progress (2/3 plans); 06-03 (Ch.21 마스터 트러블슈팅 색인) 대기
+Last session: 2026-06-11 — v1 milestone complete, archived, tagged (milestone-v1), audit fixes deployed.
 Resume file: None
-Next workflow trigger: Phase 6 Plan 06-03 (Ch.21 마스터 트러블슈팅 색인) — Wave 2 실행 가능
+Next workflow trigger: `/gsd:new-milestone` (questioning → research → requirements → roadmap for v2)

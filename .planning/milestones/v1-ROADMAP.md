@@ -1,3 +1,13 @@
+# Milestone v1: MVP — Hermes Agent 한국어 튜토리얼
+
+**Status:** ✅ SHIPPED 2026-06-11
+**Phases:** 1-6 (24 plans)
+**Live:** https://ohama.github.io/Hermes-Tutorial/
+
+This is the archived roadmap for v1. For current roadmap, see `.planning/ROADMAP.md` (created at next milestone).
+
+---
+
 # Roadmap: Hermes Agent 한국어 튜토리얼
 
 ## Overview

@@ -1,3 +1,12 @@
+# Requirements Archive: v1 MVP — Hermes Agent 한국어 튜토리얼
+
+**Archived:** 2026-06-11
+**Status:** ✅ SHIPPED
+
+Archived requirements spec for v1. For current requirements, see `.planning/REQUIREMENTS.md` (created at next milestone).
+
+---
+
 # Requirements: Hermes Agent 한국어 튜토리얼
 
 **Defined:** 2026-06-05
@@ -103,3 +112,17 @@
 ---
 *Requirements defined: 2026-06-05*
 *Last updated: 2026-06-05 after roadmap creation — all 20 v1 requirements mapped*
+
+---
+
+## Milestone Summary
+
+**Shipped:** 20 of 20 v1 requirements (100%)
+**Adjusted during milestone:**
+- `display.language: ko` Out-of-Scope reframed from '미지원' to '부분 지원' (research correction, Phase 2)
+- SC1 (Phase 4) trigger wording softened — curator trigger is inactivity-based, not '5 tool calls' (research correction)
+- SC4 (Phase 5) runbook corrected — `hermes doctor` = supply-chain CVE advisory; config validation = `hermes config check`
+**Dropped:** none
+
+---
+*Archived 2026-06-11 as part of v1 milestone completion.*
