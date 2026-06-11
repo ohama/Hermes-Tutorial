@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-06-05)
 
 **Core value:** 개발자가 따라 하면 Hermes Agent를 설치·실행하고, 스킬·게이트웨이·배포까지 실제로 동작시킬 수 있다. 모든 명령어·API는 공식 소스 근거 필수.
-**Current focus:** Phase 4 — Learning & Automation (content chapters Ch.9–13)
+**Current focus:** Phase 5 — Platforms & Operations (content chapters Ch.14–18) — ALL 4 plans COMPLETE
 
 ## Current Position
 
-Phase: 5 of 6 (Platforms & Operations) — **In progress**
-Plan: 3 of 4 in current phase — **05-02 ✓ + 05-03 ✓** (Wave 2: Ch.15 338줄 + Ch.17 353줄)
-Status: 05-01 ✓ 05-02 ✓ 05-03 ✓ — src/15-more-gateways/index.md 338줄 (Discord 2-Intents + Slack Socket Mode + WhatsApp/Signal/Email + 함정 callout); src/17-deploy/index.md 353줄; mdbook build exit 0
-Last activity: 2026-06-11 — Completed 05-02-PLAN.md (Ch.15 추가 게이트웨이) + 05-03-PLAN.md (Ch.17 프로덕션 배포)
+Phase: 5 of 6 (Platforms & Operations) — **COMPLETE (all 4 plans done)**
+Plan: 4 of 4 in current phase — **05-01 ✓ 05-02 ✓ 05-03 ✓ 05-04 ✓**
+Status: Phase 5 ALL plans done — src/18-security/index.md 327줄 (Ch.18 보안 하드닝: approvals.mode + .env 키 관리 + Tirith + 운영 런북 + 10단계 체크리스트 + 3개 정정 callout); mdbook build exit 0; SUMMARY.md 미수정
+Last activity: 2026-06-11 — Completed 05-04-PLAN.md (Ch.18 보안 하드닝 — LAST content chapter of tutorial)
 
-Progress: [████████████████░] ~78% (15/~19 plans estimated)
+Progress: [█████████████████░] ~84% (16/~19 plans estimated)
 
 ## Performance Metrics
 
@@ -117,6 +117,12 @@ Recent decisions affecting current work:
 - 05-02: WhatsApp/Signal MEDIUM 신뢰도를 섹션 헤더 직후 blockquote로 명시 — 개요 수준, 깊은 보장 없음 선제 전달
 - 05-02: hermes gateway setup 마법사 UI, slack manifest JSON 내용 → 검증 필요 callout (Open Question #2, #8 미해결)
 - 05-02: Task 2(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05/05-01 동일 패턴)
+- 05-04: hermes doctor = 공급망 어드바이저리 검사기(Python 패키지 CVE); 설정 검증은 hermes config check — doctor가 설정 검증한다는 표현 완전 배제
+- 05-04: hermes security audit 명령 존재하지 않음 — 정정 callout으로만 언급; 실행 명령으로 제시 금지
+- 05-04: security.redact_secrets = MCP 오류 메시지의 자격증명 패턴 난독화 (일반 PII 필터 아님); 별도 PII 리댁션 설정 키 없음
+- 05-04: approvals.mode 프로덕션 권장 = manual 유지 (off 경고: YOLO mode 빨간 배너 표시)
+- 05-04: Phase 6 전방 참조 = plain prose only (06-* mdBook 링크 금지 패턴 — Phase 6 레퍼런스 부록 미존재)
+- 05-04: Tasks 1+2 단일 파일 작성 처리 — no-op Task 2 커밋 생략 (02-02/05-03 패턴 재적용)
 
 ### Pending Todos
 
@@ -131,7 +137,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-11 (Plan 05-02 executed; Ch.15 추가 게이트웨이 338줄; Discord 2-Intents + Slack Socket Mode + WhatsApp/Signal/Email 개요 + 함정 callout; mdbook build exit 0)
-Stopped at: Plan 05-02 complete — Ch.15 추가 게이트웨이 챕터 완성; Wave-2 중 05-04(Ch.18) 미완료
+Last session: 2026-06-11 (Plan 05-04 executed; Ch.18 보안 하드닝 327줄; approvals.mode + .env 키 관리 + Tirith + 운영 런북 + 10단계 체크리스트 + 3개 정정; mdbook build exit 0; SUMMARY.md 미수정)
+Stopped at: Plan 05-04 complete — Phase 5 ALL 4 plans DONE; Ch.18 = LAST content chapter of tutorial
 Resume file: None
-Next workflow trigger: 05-04(Ch.18 보안 하드닝) — Wave-2 마지막 실행 가능
+Next workflow trigger: Phase 5 complete — `/gsd:complete-phase 05` to archive, then Phase 6 (레퍼런스 부록) planning
