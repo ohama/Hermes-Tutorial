@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-06-05)
 
 **Core value:** 개발자가 따라 하면 Hermes Agent를 설치·실행하고, 스킬·게이트웨이·배포까지 실제로 동작시킬 수 있다. 모든 명령어·API는 공식 소스 근거 필수.
-**Current focus:** Phase 5 — Platforms & Operations (content chapters Ch.14–18) — ALL 4 plans COMPLETE
+**Current focus:** Phase 6 — Reference (appendix chapters Ch.19–21) — Plan 06-01 COMPLETE
 
 ## Current Position
 
-Phase: 5 of 6 (Platforms & Operations) — **COMPLETE (all 4 plans done)**
-Plan: 4 of 4 in current phase — **05-01 ✓ 05-02 ✓ 05-03 ✓ 05-04 ✓**
-Status: Phase 5 ALL plans done — src/18-security/index.md 327줄 (Ch.18 보안 하드닝: approvals.mode + .env 키 관리 + Tirith + 운영 런북 + 10단계 체크리스트 + 3개 정정 callout); mdbook build exit 0; SUMMARY.md 미수정
-Last activity: 2026-06-11 — Completed 05-04-PLAN.md (Ch.18 보안 하드닝 — LAST content chapter of tutorial)
+Phase: 6 of 6 (Reference) — **In progress (1/3 plans done)**
+Plan: 1 of 3 in current phase — **06-01 ✓ 06-02 ○ 06-03 ○**
+Status: Phase 6 Plan 1 done — src/SUMMARY.md 레퍼런스 섹션(21개 목차) + src/19-cli-reference/index.md 320줄(Ch.19 CLI·슬래시 커맨드 레퍼런스: 카테고리 A~J + 슬래시 커맨드 + 정정 callout 2개) + 20/21 placeholder skeleton; mdbook build exit 0
+Last activity: 2026-06-11 — Completed 06-01-PLAN.md (Ch.19 CLI·슬래시 커맨드 레퍼런스 + SUMMARY.md 레퍼런스 섹션 Wave-1 owner)
 
-Progress: [█████████████████░] ~84% (16/~19 plans estimated)
+Progress: [██████████████████░] ~90% (17/~19 plans estimated)
 
 ## Performance Metrics
 
@@ -123,6 +123,11 @@ Recent decisions affecting current work:
 - 05-04: approvals.mode 프로덕션 권장 = manual 유지 (off 경고: YOLO mode 빨간 배너 표시)
 - 05-04: Phase 6 전방 참조 = plain prose only (06-* mdBook 링크 금지 패턴 — Phase 6 레퍼런스 부록 미존재)
 - 05-04: Tasks 1+2 단일 파일 작성 처리 — no-op Task 2 커밋 생략 (02-02/05-03 패턴 재적용)
+- 06-01: Phase 6 검증 주석은 '# 검증: hermes rolling, 2026-06-11' (Phase 5의 06-11과 동일)
+- 06-01: hermes security audit = 존재하지 않음 정정 callout으로만 (사용 명령 목록 제외) — Ch.18 패턴 유지
+- 06-01: hermes doctor = 공급망 어드바이저리(설정 검증 아님) 정정 표로 명시 — hermes config check와 구분
+- 06-01: plan verify 텍스트('검증된 명령어만 수록')와 RESEARCH.md callout 원문('확인된')이 달라 '검증된'으로 맞춤 (의미 동일)
+- 06-01: Task 3(빌드 검증) 소스 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05/05-01 패턴 재확인)
 
 ### Pending Todos
 
@@ -137,7 +142,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-11 (Plan 05-04 executed; Ch.18 보안 하드닝 327줄; approvals.mode + .env 키 관리 + Tirith + 운영 런북 + 10단계 체크리스트 + 3개 정정; mdbook build exit 0; SUMMARY.md 미수정)
-Stopped at: Plan 05-04 complete — Phase 5 ALL 4 plans DONE; Ch.18 = LAST content chapter of tutorial
+Last session: 2026-06-11 (Plan 06-01 executed; SUMMARY.md 레퍼런스 섹션(21개 목차) + Ch.19 CLI·슬래시 커맨드 레퍼런스 320줄 + 20/21 placeholder skeleton; mdbook build exit 0)
+Stopped at: Plan 06-01 complete — Phase 6 In progress (1/3 plans); SUMMARY.md Wave-1 소유 완료 → 06-02/06-03 Wave 2 병렬 실행 준비
 Resume file: None
-Next workflow trigger: Phase 5 complete — `/gsd:complete-phase 05` to archive, then Phase 6 (레퍼런스 부록) planning
+Next workflow trigger: Phase 6 Plan 06-02 (Ch.20 config.yaml 레퍼런스) and/or 06-03 (Ch.21 마스터 트러블슈팅 색인) — Wave 2 병렬 실행 가능
