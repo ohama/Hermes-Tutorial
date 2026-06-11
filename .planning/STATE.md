@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 ## Current Position
 
 Phase: 5 of 6 (Platforms & Operations) — **In progress**
-Plan: 3 of 4 in current phase — **05-03 DONE** (Wave 2: Ch.17 프로덕션 배포 본문 353줄)
-Status: 05-01 ✓ 05-02 (in progress) 05-03 ✓ — src/17-deploy/index.md 353줄; Docker/VPS/SSH/Modal/Daytona/API서버/함정; mdbook build exit 0
-Last activity: 2026-06-11 — Completed 05-03-PLAN.md (Ch.17 프로덕션 배포)
+Plan: 3 of 4 in current phase — **05-02 ✓ + 05-03 ✓** (Wave 2: Ch.15 338줄 + Ch.17 353줄)
+Status: 05-01 ✓ 05-02 ✓ 05-03 ✓ — src/15-more-gateways/index.md 338줄 (Discord 2-Intents + Slack Socket Mode + WhatsApp/Signal/Email + 함정 callout); src/17-deploy/index.md 353줄; mdbook build exit 0
+Last activity: 2026-06-11 — Completed 05-02-PLAN.md (Ch.15 추가 게이트웨이) + 05-03-PLAN.md (Ch.17 프로덕션 배포)
 
 Progress: [████████████████░] ~78% (15/~19 plans estimated)
 
@@ -113,6 +113,10 @@ Recent decisions affecting current work:
 - 05-03: sudo hermes gateway install --system 경로 MEDIUM → 검증 필요 callout; Ubuntu VPS 직접 확인 안내
 - 05-03: Modal managed mode DEFERRED + modal_image 키 MEDIUM → 검증 필요 callout
 - 05-03: Tasks 1+2를 단일 파일 작성으로 처리 (02-02/03-03 패턴 재적용)
+- 05-02: Discord Message Content Intent를 챕터 상단 미리읽기 callout + 하단 전용 오류 섹션 두 곳에 배치 — #1 무반응 원인이므로 이중 배치로 강조
+- 05-02: WhatsApp/Signal MEDIUM 신뢰도를 섹션 헤더 직후 blockquote로 명시 — 개요 수준, 깊은 보장 없음 선제 전달
+- 05-02: hermes gateway setup 마법사 UI, slack manifest JSON 내용 → 검증 필요 callout (Open Question #2, #8 미해결)
+- 05-02: Task 2(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05/05-01 동일 패턴)
 
 ### Pending Todos
 
@@ -122,12 +126,12 @@ None yet.
 
 - **[Node.js 20 deprecation — LOW, 2026-06-16]** GitHub Actions annotations warn that checkout@v4, configure-pages@v5, and upload-artifact@v4 use Node.js 20 (deprecated); GitHub forces Node 24 runtime from 2026-06-16. Non-blocking — actions continue to work post-migration. Future maintenance: update to action versions natively targeting Node 24 when available. Does NOT block Phase 2.
 - ~~Phase 4: Honcho integration~~ RESOLVED — Ch.10(04-02)에서 honcho.dev 외부 계정 필요 및 최소 설정 키 기술 완료
-- Phase 5: Discord OAuth + Privileged Gateway Intents 흐름 2026-03 이후 변경 가능 — Discord 서브챕터 작성 전 검증 필요
+- ~~Phase 5: Discord OAuth + Privileged Gateway Intents 흐름 2026-03 이후 변경 가능~~ 05-02 기술 완료 — RESEARCH.md HIGH confidence로 기술; 실제 포털 확인 권장 (non-blocking)
 - Phase 5: Modal/Daytona 백엔드 YAML 키 공개 문서 미확인 — serverless 배포 섹션 작성 전 검증 필요
 
 ## Session Continuity
 
-Last session: 2026-06-11 (Plan 05-03 executed; Ch.17 프로덕션 배포 본문 353줄; Docker/VPS systemd/SSH/Modal/Daytona/API서버/함정; mdbook build exit 0)
-Stopped at: Plan 05-03 complete — Ch.17 배포 챕터 완성; Wave-2 중 05-02/05-04 미완료
+Last session: 2026-06-11 (Plan 05-02 executed; Ch.15 추가 게이트웨이 338줄; Discord 2-Intents + Slack Socket Mode + WhatsApp/Signal/Email 개요 + 함정 callout; mdbook build exit 0)
+Stopped at: Plan 05-02 complete — Ch.15 추가 게이트웨이 챕터 완성; Wave-2 중 05-04(Ch.18) 미완료
 Resume file: None
-Next workflow trigger: 05-02(Ch.15 추가 게이트웨이) / 05-04(Ch.18 보안 하드닝) — Wave-2 나머지 실행 가능
+Next workflow trigger: 05-04(Ch.18 보안 하드닝) — Wave-2 마지막 실행 가능
