@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-06-05)
 
 ## Current Position
 
-Phase: 4 of 6 (Learning & Automation) — **In progress**
-Plan: 5 of 5 in current phase — **04-05 DONE** (Wave 2: Ch.13 서브에이전트 본문 303줄; Phase 4 마지막 챕터)
-Status: 04-05 complete — src/13-subagents/index.md 303줄(delegate_task 격리/동시성/leaf 제약 + Kanban 내구 SQLite 시스템 + 선택 기준 비교표); mdbook build exit 0; SUMMARY.md 미수정
-Last activity: 2026-06-10 — Completed 04-05-PLAN.md (Ch.13 서브에이전트 본문 작성)
+Phase: 5 of 6 (Platforms & Operations) — **In progress**
+Plan: 1 of 4 in current phase — **05-01 DONE** (Wave 1: SUMMARY.md 스켈레톤 + Ch.14 Telegram 게이트웨이 본문 221줄)
+Status: 05-01 complete — src/SUMMARY.md 18개 링크(플랫폼과 운영 4항목 추가); src/14-gateways/index.md 221줄; 15/17/18 스켈레톤; mdbook build exit 0
+Last activity: 2026-06-11 — Completed 05-01-PLAN.md (SUMMARY.md 스켈레톤 + Ch.14 Telegram 게이트웨이)
 
-Progress: [███████████████░] ~72% (14/~18 plans estimated)
+Progress: [████████████████░] ~78% (15/~19 plans estimated)
 
 ## Performance Metrics
 
@@ -104,6 +104,11 @@ Recent decisions affecting current work:
 - 04-02: Curator 트리거 = 비활동 기반(min_idle_hours 2h AND interval_hours 168h) 단독 — '15작업마다' 단언 금지 (RESEARCH.md 정정 반영)
 - 04-02: 스킬 저장 제안 문구·.usage.json 위치·curator status 출력 = LOW → placeholder + 검증 필요 callout
 - 04-02: Honcho = 선택 심화 aside 1~2단락 + 최소 설정 코드블록 1개만 (외부 계정 필요 명시, 필수 핸즈온 아님)
+- 05-01: Ch.14 디렉터리는 14-gateways/ (연구 초안의 14-telegram/ 아님) — PLAN.md planning_context 확정값
+- 05-01: 16-* 항목/디렉터리 없음 — Ch.15–16은 15-more-gateways 단일 파일이 커버 (mdBook 중복 빌드 오류 방지)
+- 05-01: hermes gateway vs hermes gateway run 구분 명시 — run은 Docker 내 실행; gateway start는 install 이후 서비스 시작 전용
+- 05-01: Phase 5 검증 주석은 '# 검증: hermes rolling, 2026-06-11' (Phase 4의 06-10과 구분)
+- 05-01: Task 3(빌드 검증) 파일 변경 없음 → no-op 커밋 생략 (03-03/04-03/04-04/04-05 동일 패턴)
 
 ### Pending Todos
 
@@ -118,7 +123,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-10 (Plan 04-05 executed; Ch.13 서브에이전트 본문 303줄; delegate_task+Kanban 내구 시스템+비교표; mdbook build exit 0; SUMMARY.md 미수정)
-Stopped at: Plan 04-05 complete — Phase 4 Wave-2 마지막 챕터(Ch.13 서브에이전트) 완성; 04-02(Ch.10 학습 루프) 미완료 시 해당 플랜 후 Phase 4 complete 처리 가능
+Last session: 2026-06-11 (Plan 05-01 executed; SUMMARY.md 18-챕터 스켈레톤 + Ch.14 Telegram 게이트웨이 본문 221줄; 15/17/18 스켈레톤; mdbook build exit 0)
+Stopped at: Plan 05-01 complete — Phase 5 Wave-1 소유자 플랜 완성; Wave-2(05-02~05-04) 병렬 실행 기반 확립
 Resume file: None
-Next workflow trigger: 04-02(Ch.10 학습 루프) DONE — Phase 4 Wave-2 모든 챕터(Ch.10~13) 완성; `/gsd:complete-phase 04` → Phase 5(배포/게이트웨이) 시작
+Next workflow trigger: Phase 5 Wave-2 시작 — 05-02(Ch.15 추가 게이트웨이) / 05-03(Ch.17 프로덕션 배포) / 05-04(Ch.18 보안 하드닝) 병렬 실행 가능
