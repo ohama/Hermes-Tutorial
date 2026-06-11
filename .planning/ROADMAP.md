@@ -107,14 +107,14 @@ Plans:
   1. Ch.14 메시징 게이트웨이 챕터를 따라 Telegram 봇을 설정하고 Hermes와 대화할 수 있다 (Discord Message Content Intent 함정 포함)
   2. Ch.15–16 추가 게이트웨이 챕터를 따라 Discord/Slack/WhatsApp/Signal/Email 중 하나를 추가로 설정할 수 있다
   3. Ch.17 배포 챕터를 따라 적어도 하나의 시나리오($5 VPS, Docker, SSH, Modal, Daytona)로 Hermes를 프로덕션 배포할 수 있다
-  4. Ch.18 보안 챕터를 따라 승인 모드, `.env` 기반 API 키 관리, `hermes doctor` 운영 런북을 적용할 수 있다
-**Plans**: TBD
+  4. Ch.18 보안 챕터를 따라 승인 모드, `.env` 기반 API 키 관리, 운영 런북(`hermes config check` 설정 검증 + `hermes doctor` 공급망 어드바이저리 + `hermes status` 런타임)을 적용할 수 있다 (정정: 연구 결과 `hermes doctor`는 공급망 CVE 검사기이며 설정 검증은 `hermes config check`)
+**Plans**: 4 plans
 
 Plans:
-- [ ] 05-01: Ch.14 Telegram 게이트웨이 — 봇 토큰 설정, `hermes gateway`, 폴링 중복 함정
-- [ ] 05-02: Ch.15–16 추가 게이트웨이 — Discord (Intents 함정), Slack, WhatsApp/Signal/Email
+- [ ] 05-01: Ch.14 Telegram 게이트웨이 — 봇 토큰 설정, `hermes gateway run`, 폴링 중복 함정 + SUMMARY 소유
+- [ ] 05-02: Ch.15–16 추가 게이트웨이 — Discord (2-Intents 함정), Slack, WhatsApp/Signal/Email
 - [ ] 05-03: Ch.17 배포 전략 — VPS/Docker/SSH/Modal/Daytona 시나리오별 단계, Docker root 파일 함정
-- [ ] 05-04: Ch.18 보안 하드닝 — 승인 모드 설정, `.env` 키 관리, PII 리댁션, `hermes doctor` 런북
+- [ ] 05-04: Ch.18 보안 하드닝 — 승인 모드 설정, `.env` 키 관리, `redact_secrets`(자격증명 난독화), 운영 런북(`hermes doctor`/`config check`/`status`)
 
 ---
 
