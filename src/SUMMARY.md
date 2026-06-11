@@ -39,3 +39,11 @@
 - [추가 게이트웨이](15-more-gateways/index.md)
 - [프로덕션 배포](17-deploy/index.md)
 - [보안 하드닝](18-security/index.md)
+
+---
+
+# 레퍼런스
+
+- [CLI · 슬래시 커맨드 레퍼런스](19-cli-reference/index.md)
+- [config.yaml 레퍼런스](20-config-reference/index.md)
+- [마스터 트러블슈팅 색인](21-troubleshooting/index.md)
