@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Core Concepts** - 에이전트 루프·컨텍스트·메모리·툴 게이트웨이 챕터 (Ch.4–8)
 - [x] **Phase 4: Learning & Automation** - 스킬·학습 루프·MCP·크론·서브에이전트 챕터 (Ch.9–13)
 - [x] **Phase 5: Platforms & Operations** - 메시징 게이트웨이·배포·보안 챕터 (Ch.14–18)
-- [ ] **Phase 6: Reference** - CLI·슬래시 커맨드·설정·트러블슈팅 레퍼런스 부록
+- [x] **Phase 6: Reference** - CLI·슬래시 커맨드·설정·트러블슈팅 레퍼런스 부록
 
 ## Phase Details
 
@@ -129,9 +129,9 @@ Plans:
 **Plans**: 3 plans (Wave 1: 06-01 owner / Wave 2: 06-02, 06-03 parallel)
 
 Plans:
-- [ ] 06-01-PLAN.md — SUMMARY.md "# 레퍼런스" 섹션 단독 소유 + Ch.19 CLI·슬래시 커맨드 레퍼런스 본문 + 20/21 스켈레톤
-- [ ] 06-02-PLAN.md — Ch.20 config.yaml 레퍼런스 본문 (영역별 키 기본값·허용값, approvals 충돌 헤지) [depends 06-01]
-- [ ] 06-03-PLAN.md — Ch.21 마스터 트러블슈팅 색인 본문 (37개 오류 집약 + 백워드 챕터 링크 + 용어 사전) [depends 06-01]
+- [x] 06-01-PLAN.md — SUMMARY.md "# 레퍼런스" 섹션 단독 소유 + Ch.19 CLI·슬래시 커맨드 레퍼런스 본문 + 20/21 스켈레톤
+- [x] 06-02-PLAN.md — Ch.20 config.yaml 레퍼런스 본문 (영역별 키 기본값·허용값, approvals 충돌 헤지) [depends 06-01]
+- [x] 06-03-PLAN.md — Ch.21 마스터 트러블슈팅 색인 본문 (37개 오류 집약 + 백워드 챕터 링크 + 용어 사전) [depends 06-01]
 
 ---
 
@@ -147,8 +147,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 3. Core Concepts | 5/5 | ✓ Complete | 2026-06-10 |
 | 4. Learning & Automation | 5/5 | ✓ Complete | 2026-06-10 |
 | 5. Platforms & Operations | 4/4 | ✓ Complete | 2026-06-11 |
-| 6. Reference | 0/3 | Not started | - |
+| 6. Reference | 3/3 | ✓ Complete | 2026-06-11 |
 
 ---
 *Roadmap created: 2026-06-05*
-*Last updated: 2026-06-11 after Phase 5 completion (Ch.0–18 live at https://ohama.github.io/Hermes-Tutorial/)*
+*Last updated: 2026-06-11 after Phase 6 completion — v1 MILESTONE COMPLETE (Ch.0–18 + 레퍼런스 부록 19–21, 21 chapters live at https://ohama.github.io/Hermes-Tutorial/)*
