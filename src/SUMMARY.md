@@ -30,3 +30,12 @@
 - [MCP 연동](11-mcp/index.md)
 - [크론 스케줄러](12-cron/index.md)
 - [서브에이전트](13-subagents/index.md)
+
+---
+
+# 플랫폼과 운영
+
+- [메시징 게이트웨이: Telegram](14-gateways/index.md)
+- [추가 게이트웨이](15-more-gateways/index.md)
+- [프로덕션 배포](17-deploy/index.md)
+- [보안 하드닝](18-security/index.md)
